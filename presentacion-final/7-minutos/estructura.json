@@ -1,0 +1,98 @@
+{
+  "durationSeconds": 420,
+  "mainSlides": 14,
+  "appendixSlides": 4,
+  "videoSeconds": 64.5,
+  "slides": [
+    {
+      "id": "equipo",
+      "seconds": 15,
+      "appendix": false
+    },
+    {
+      "id": "personas",
+      "seconds": 20,
+      "appendix": false
+    },
+    {
+      "id": "diagnostico",
+      "seconds": 40,
+      "appendix": false
+    },
+    {
+      "id": "oportunidad",
+      "seconds": 40,
+      "appendix": false
+    },
+    {
+      "id": "omni",
+      "seconds": 25,
+      "appendix": false
+    },
+    {
+      "id": "whatsapp",
+      "seconds": 35,
+      "appendix": false
+    },
+    {
+      "id": "web",
+      "seconds": 35,
+      "appendix": false
+    },
+    {
+      "id": "backoffice",
+      "seconds": 25,
+      "appendix": false
+    },
+    {
+      "id": "video",
+      "seconds": 65,
+      "appendix": false
+    },
+    {
+      "id": "24h",
+      "seconds": 35,
+      "appendix": false
+    },
+    {
+      "id": "economia",
+      "seconds": 40,
+      "appendix": false
+    },
+    {
+      "id": "siguiente",
+      "seconds": 20,
+      "appendix": false
+    },
+    {
+      "id": "cierre",
+      "seconds": 15,
+      "appendix": false
+    },
+    {
+      "id": "gracias",
+      "seconds": 10,
+      "appendix": false
+    },
+    {
+      "id": "anexo-capturas",
+      "seconds": 0,
+      "appendix": true
+    },
+    {
+      "id": "anexo-modelo",
+      "seconds": 0,
+      "appendix": true
+    },
+    {
+      "id": "anexo-alcance",
+      "seconds": 0,
+      "appendix": true
+    },
+    {
+      "id": "anexo-fuentes",
+      "seconds": 0,
+      "appendix": true
+    }
+  ]
+}

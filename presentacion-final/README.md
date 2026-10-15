@@ -1,5 +1,7 @@
 # OMNI by 5.5 · Presentación final V1
 
+**Pitch de siete minutos con capturas y video:** [abrir versión](7-minutos/index.html), [guion cronometrado](7-minutos/SPEECH_7_MIN.md) y [PDF](7-minutos/OMNI-5.5-7-minutos.pdf). La V1 extensa se conserva a continuación como referencia.
+
 Presentación **web interactiva**, separada de la aplicación. Conserva el 5.5 centrado, la narrativa comercial y los big numbers. Su alcance se actualizó al portal modular sobre Firebase.
 
 ## Empezar aquí
