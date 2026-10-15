@@ -56,4 +56,4 @@ La lámina distingue conversación con IA, reglas deterministas y validación hu
 
 ## Retratos del equipo
 
-Fotografías aportadas por el usuario el 15/10/2026, en el orden indicado: David, Binni, Jordy y Melani. Originales en `assets/equipo/`; las fotos se muestran a color natural; el encuadre y el marco rojo se aplican únicamente en la presentación con CSS.
+Fotografías aportadas por el usuario el 15/10/2026, en el orden indicado: David, Binni, Jordy y Melani. Originales en `assets/equipo/`; la escala de grises, el encuadre y el marco rojo se aplican únicamente en la presentación con CSS. El retrato de Melani conserva la cabeza completa dentro del encuadre.
