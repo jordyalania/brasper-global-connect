@@ -1,7 +1,7 @@
 {
   "durationSeconds": 420,
   "mainSlides": 16,
-  "appendixSlides": 7,
+  "appendixSlides": 8,
   "videoSeconds": 64.5,
   "channels": [
     "WhatsApp",
@@ -144,6 +144,12 @@
     },
     {
       "id": "anexo-optimizacion",
+      "seconds": 0,
+      "block": "ANEXOS",
+      "appendix": true
+    },
+    {
+      "id": "anexo-ia-responsable",
       "seconds": 0,
       "block": "ANEXOS",
       "appendix": true

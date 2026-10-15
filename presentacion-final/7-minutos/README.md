@@ -1,6 +1,6 @@
 # OMNI by 5.5 · Pitch de siete minutos
 
-Presentación web 16:9 con 16 diapositivas principales y 7 anexos. Mantiene el rojo, negro, crema y la portada centrada de 5.5.
+Presentación web 16:9 con 16 diapositivas principales y 8 anexos. Mantiene el rojo, negro, crema y la portada centrada de 5.5.
 
 - [Abrir presentación](index.html). Desde el servidor de la carpeta superior: `/7-minutos/`.
 - [PDF de respaldo](OMNI-5.5-7-minutos.pdf), sin video interactivo.
@@ -14,7 +14,7 @@ Flechas para navegar, F para pantalla completa, S para notas. El botón Anexos s
 
 El video y las capturas se incluyen localmente para no depender de servicios externos. El runtime de Reveal y GSAP está en la carpeta superior. Conservar esa estructura al copiar. Esta entrega no cambia la aplicación ni los servicios cloud.
 
-Para continuar: editar `index.html` y `seven.css`; mantener `estructura.json`, guion, fuentes y PDF sincronizados. Los 7 anexos no cuentan en los siete minutos. No presentar proyecciones como resultados.
+Para continuar: editar `index.html` y `seven.css`; mantener `estructura.json`, guion, fuentes y PDF sincronizados. Los 8 anexos no cuentan en los siete minutos. No presentar proyecciones como resultados.
 
 ## Cálculos para revisión
 
@@ -39,3 +39,7 @@ Anexo A: cálculo de S/3.780. Anexo A.2: recuperaciones del 5%, 10% y 20%, con s
 [Optimización propuesta de WhatsApp](OPTIMIZACION_WHATSAPP.md): el anexo F explica cómo agrupar datos y mensajes. Mantener separado del estado actual.
 
 En la solución se cuentan iOS y Android por separado: cuatro puntos de acceso. Comparten implementación móvil y backend. No duplicar presupuesto ni ventas por esta distinción.
+
+## Transparencia de IA
+
+El anexo G distingue conversación con IA, reglas deterministas y validación humana. Incluye un aviso explícito propuesto y fuente normativa peruana; su despliegue y el cumplimiento integral requieren verificación. No cambia el recorrido principal de las láminas 3 a 15.

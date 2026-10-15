@@ -27,3 +27,7 @@ Comparación del 5%, 10% y 20% de recuperación, más 60 nocturnas distintas. M=
 ## anexo-optimizacion
 
 Anexo F: datos en formulario web o Flow, apertura y confirmación combinadas, soporte en 10% de casos. Objetivo S/1.400 con Meta, aún por implementar. La columna oficial vigente en A.2 usa el objetivo, no S/3.500 de referencia.
+
+## anexo-ia-responsable
+
+Anexo G: identificación de IA y separación entre conversación, reglas y aprobación humana. Aviso explícito por incorporar. Citar D.S. 115-2025-PCM sin afirmar certificación ni cumplimiento integral. Fuera de los siete minutos; no modifica las láminas 3 a 15.
