@@ -1,0 +1,4 @@
+*.pdf binary
+# Preserve third-party assets and original source text unchanged.
+vendor/** -whitespace
+fuentes/Brainstorm-final-speech.txt -whitespace

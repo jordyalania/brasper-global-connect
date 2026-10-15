@@ -1,0 +1,40 @@
+Indicador,Valor,Unidad,Tipo,Fuente o fórmula
+Registros SQL,3723,transferencias,Observado,PDF transferencias p1
+No eliminadas,3601,transferencias,Observado,PDF transferencias p1
+Completadas no eliminadas,3463,transferencias,Observado,PDF transferencias p1
+Septiembre registrado,1355,transferencias,Observado,PDF transferencias p2
+Chats diarios,131,chats,Informado,PDF WhatsApp p1
+Chats que transfieren,67,chats/día,Informado,PDF WhatsApp p1
+Quedan en cotización,64,chats/día,Informado,PDF WhatsApp p1
+Facebook mínimo,20,% chats,Informado,PDF WhatsApp p2
+Sueldo ventas,1700,PEN/mes,Supuesto usuario,Conversación
+Ventas hoy,6,personas,Informado usuario,Conversación
+Ventas objetivo,3,personas,Meta,Piloto
+Contabilidad hoy,3,personas,Informado usuario,Conversación
+Contabilidad objetivo,1,persona,Meta,Piloto
+Capacidad salarial ventas mensual,5100,PEN,Escenario,3*1700
+Capacidad salarial ventas anual,61200,PEN,Escenario,5100*12
+Recuperación de cotizaciones,10,%,Supuesto,Ejemplo
+Días activos,30,días,Supuesto,Ejemplo
+Transferencias incrementales,192,por mes,Escenario,64*.10*30
+Margen contribución,15,PEN/operación,Supuesto,Ejemplo no dato real
+Contribución recuperada,2880,PEN/mes,Escenario,192*15 antes costo recuperación
+Crecimiento monto enviado,60,% aprox.,Informado en speech,"2T2026 vs2T2025, no efecto de la solución"
+Crecimiento clientes nuevos,31,% aprox.,Informado en speech,2T2026 vs2T2025
+Crecimiento envíos,25,% aprox.,Informado en speech,2T2026 vs2T2025
+Retención previa,90.5,%,Informado en speech,Definición y denominador por confirmar
+Retención reciente,87,%,Informado en speech,Definición y denominador por confirmar
+Diferencia retención,-3.5,puntos porcentuales,Derivado de speech,87-90.5
+Nueva demanda fuera de horario,10,intenciones/día,Supuesto,Demanda adicional no medida
+Conversión fuera de horario,20,%,Supuesto,Ejemplo
+Operaciones nuevas fuera de horario,60,al mes,Escenario,10*.20*30
+Contribución fuera de horario,900,PEN/mes,Escenario,60*15 antes de costo incremental
+Contribución combinada,3780,PEN/mes,Escenario,"192+60 distintas, por15"
+Dotación confirmada,6+3,personas,Confirmado por usuario,"6ventas,3contabilidad"
+Sueldo contable estimado,2000,PEN/mes,Supuesto del modelo,"Estimación, no nómina ni estudio de mercado"
+Puestos ventas liberados,3,puestos,Escenario,6a3
+Puestos contabilidad liberados,2,puestos,Escenario,3a1
+Capacidad salarial contable mensual,4000,PEN/mes,Escenario,2*2000
+Puestos totales liberados,5,puestos,Escenario,3ventas+2contabilidad
+Capacidad salarial total mensual,9100,PEN/mes,Escenario bruto,3*1700+2*2000
+Capacidad salarial total anual,109200,PEN/año,Escenario bruto,9100*12

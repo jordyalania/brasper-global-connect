@@ -1,0 +1,188 @@
+{
+  "name": "OMNI by 5.5",
+  "client": "Brasper",
+  "version": "V1-final-modular",
+  "webRepository": "jordyalania/brasper-global-connect",
+  "reviewedCommit": "f9ae0aa",
+  "format": "HTML Reveal.js, 1280x720",
+  "mainSlides": 14,
+  "appendixSlides": 11,
+  "videoSeconds": 90,
+  "slides": [
+    {
+      "number": 1,
+      "id": "equipo",
+      "title": "EL CAMBIO ESTÁ ABIERTO.",
+      "kind": "pitch",
+      "url": "#/equipo"
+    },
+    {
+      "number": 2,
+      "id": "diagnostico",
+      "title": "EL BRIEF PEDÍA FACTURAR. PREGUNTAMOS MÁS.",
+      "kind": "pitch",
+      "url": "#/diagnostico"
+    },
+    {
+      "number": 3,
+      "id": "hallazgo",
+      "title": "EL MAYOR POTENCIAL ESTABA EN VENTAS.",
+      "kind": "pitch",
+      "url": "#/hallazgo"
+    },
+    {
+      "number": 4,
+      "id": "operacion",
+      "title": "BRASPER CRECE. LA EXPERIENCIA DEBE SEGUIRLE.",
+      "kind": "pitch",
+      "url": "#/operacion"
+    },
+    {
+      "number": 5,
+      "id": "retencion",
+      "title": "87%",
+      "kind": "pitch",
+      "url": "#/retencion"
+    },
+    {
+      "number": 6,
+      "id": "oportunidad",
+      "title": "64 COTIZACIONES. UNA SEGUNDA OPORTUNIDAD.",
+      "kind": "pitch",
+      "url": "#/oportunidad"
+    },
+    {
+      "number": 7,
+      "id": "omni",
+      "title": "EMPIEZA EN WHATSAPP. SIGUE DONDE QUIERAS.",
+      "kind": "pitch",
+      "url": "#/omni"
+    },
+    {
+      "number": 8,
+      "id": "datos",
+      "title": "LA INFORMACIÓN JUNTA VENDE MEJOR.",
+      "kind": "pitch",
+      "url": "#/datos"
+    },
+    {
+      "number": 9,
+      "id": "ia",
+      "title": "UN AGENTE QUE ACOMPAÑA LA VENTA.",
+      "kind": "pitch",
+      "url": "#/ia"
+    },
+    {
+      "number": 10,
+      "id": "continuidad",
+      "title": "ENTENDER QUÉ FALTA. AYUDAR A CONTINUAR.",
+      "kind": "pitch",
+      "url": "#/continuidad"
+    },
+    {
+      "number": 11,
+      "id": "24h",
+      "title": "TU PRÓXIMO CLIENTE NO ESPERA A MAÑANA.",
+      "kind": "pitch",
+      "url": "#/24h"
+    },
+    {
+      "number": 12,
+      "id": "video",
+      "title": "Video del producto ·90segundos",
+      "kind": "pitch",
+      "url": "#/video"
+    },
+    {
+      "number": 13,
+      "id": "piloto",
+      "title": "30 DÍAS. DECISIONES CON DATOS.",
+      "kind": "pitch",
+      "url": "#/piloto"
+    },
+    {
+      "number": 14,
+      "id": "cierre",
+      "title": "QUE LLEGUEN. QUE AVANCEN. QUE VUELVAN.",
+      "kind": "pitch",
+      "url": "#/cierre"
+    },
+    {
+      "number": 15,
+      "id": "crecimiento",
+      "title": "+192",
+      "kind": "appendix",
+      "url": "#/crecimiento"
+    },
+    {
+      "number": 16,
+      "id": "marketing",
+      "title": "EL MISMO TRÁFICO. MÁS OPORTUNIDADES.",
+      "kind": "appendix",
+      "url": "#/marketing"
+    },
+    {
+      "number": 17,
+      "id": "valor",
+      "title": "S/3.780",
+      "kind": "appendix",
+      "url": "#/valor"
+    },
+    {
+      "number": 18,
+      "id": "modelo",
+      "title": "VENDER MÁS CAMBIA LA ECUACIÓN.",
+      "kind": "appendix",
+      "url": "#/modelo"
+    },
+    {
+      "number": 19,
+      "id": "sensibilidad",
+      "title": "PEQUEÑOS PUNTOS. IMPACTO ACUMULADO.",
+      "kind": "appendix",
+      "url": "#/sensibilidad"
+    },
+    {
+      "number": 20,
+      "id": "tiempos",
+      "title": "MENOS “¿CÓMO VA?”. MÁS CLARIDAD.",
+      "kind": "appendix",
+      "url": "#/tiempos"
+    },
+    {
+      "number": 21,
+      "id": "futuro",
+      "title": "UN CLIENTE. LA PRÓXIMA MEJOR ACCIÓN.",
+      "kind": "appendix",
+      "url": "#/futuro"
+    },
+    {
+      "number": 22,
+      "id": "capacidad",
+      "title": "MENOS REPETICIÓN. MÁS CAPACIDAD.",
+      "kind": "appendix",
+      "url": "#/capacidad"
+    },
+    {
+      "number": 23,
+      "id": "ahorro",
+      "title": "S/109.200",
+      "kind": "appendix",
+      "url": "#/ahorro"
+    },
+    {
+      "number": 24,
+      "id": "volumen",
+      "title": "3.723",
+      "kind": "appendix",
+      "url": "#/volumen"
+    },
+    {
+      "number": 25,
+      "id": "fuentes",
+      "title": "LAS FUENTES VIAJAN CON EL PITCH.",
+      "kind": "appendix",
+      "url": "#/fuentes"
+    }
+  ]
+}
