@@ -16,6 +16,10 @@ El video y las capturas se incluyen localmente para no depender de servicios ext
 
 Para continuar: editar `index.html` y `seven.css`; mantener `estructura.json`, guion, fuentes y PDF sincronizados. Los 7 anexos no cuentan en los siete minutos. No presentar proyecciones como resultados.
 
+## Cálculos para revisión
+
+[RESUMEN_CALCULOS.md](RESUMEN_CALCULOS.md) explica paso a paso los US$234 de Meta con optimización y el saldo proyectado de S/2.380. Ambos cálculos también se desarrollan en los anexos A, A.2, E y F.
+
 ## Bloques de exposición
 
 1. Problemática: diagnóstico y 64 cotizaciones sin transferencia.
