@@ -23,3 +23,7 @@ Desglose del presupuesto tecnológico. Fuentes y límites en COSTOS_TECNOLOGICOS
 ## anexo-a2
 
 Comparación del 5%, 10% y 20% de recuperación, más 60 nocturnas distintas. M=S/15 y 30 días. Saldos tras WAHA S/300 o Cloud API S/3.500, como alternativas, antes de campañas.
+
+## anexo-optimizacion
+
+Anexo F: datos en formulario web o Flow, apertura y confirmación combinadas, soporte en 10% de casos. Objetivo S/1.400 con Meta, aún por implementar. La columna oficial vigente en A.2 usa el objetivo, no S/3.500 de referencia.

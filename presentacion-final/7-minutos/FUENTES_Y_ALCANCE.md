@@ -39,3 +39,7 @@ El ahorro de S/109.200/año es un equivalente bruto de capacidad operativa liber
 ## Actualización de Meta y sensibilidad
 
 Supuesto vigente: el usuario inicia todas las conversaciones. Seis respuestas de servicio por chat, 4.000 chats, sin marketing ni utilidad adicional. La hoja oficial desde 01/10/2026 cobra servicio tras 1.000 mensajes gratuitos/mes por número. Presupuesto conservador con tarifa Perú: S/3.500/mes. Anexo A.2 muestra 5%, 10% y 20%. Priorizar el cálculo y fuentes de COSTOS_TECNOLOGICOS.md sobre los ejemplos históricos.
+
+## Presupuesto optimizado de próxima iteración
+
+El objetivo vigente del pitch es S/1.400/mes con Meta, bajo la propuesta documentada en OPTIMIZACION_WHATSAPP.md. Dos envíos por chat más apoyo en 10% de casos: 2,2 de media. No está implementado; S/3.500 sigue como referencia anterior. No alterar tarifas ni asumir gratuidad de plantillas. Las seis respuestas por chat descritas antes corresponden a la referencia, no al diseño propuesto.

@@ -48,7 +48,7 @@
 
 ## 12. 03 / IMPACTO · COSTO-BENEFICIO · costobeneficio · 35 segundos
 
-35 s. La puesta en marcha está incluida. Si el cliente inicia y respondemos seis veces por chat, Meta sigue cobrando servicio después de mil mensajes gratuitos al mes. Presupuestamos conservadoramente tres mil quinientos soles mensuales, incluida tecnología, sin campañas. El escenario de tres mil setecientos ochenta deja doscientos ochenta antes de otros costos. Por eso comparamos recuperaciones del cinco, diez y veinte por ciento. WAHA conserva un presupuesto alternativo de trescientos soles. Son alternativas, no cargos que debamos sumar.
+35 s. La puesta en marcha está incluida. Proponemos optimizar WhatsApp agrupando los datos en un formulario: un mensaje de entrada y una confirmación, con apoyo adicional en algunos casos. Aún no está implementado. Con tarifas conservadoras de Meta y reserva, el objetivo baja de tres mil quinientos a mil cuatrocientos soles mensuales. El escenario comercial dejaría dos mil trescientos ochenta antes de otros costos. Noventa y cuatro operaciones nuevas cubrirían esa tecnología. Validaremos costo y experiencia juntos.
 
 ## 13. 04 / DEMO · video · 65 segundos
 
@@ -65,3 +65,7 @@
 ## 16. AGRADECIMIENTOS · gracias · 10 segundos
 
 10 s. Gracias. Cierre con los logos de organizadores y aliados aportados en el material del equipo.
+
+## Costo optimizado propuesto
+
+El presupuesto usado ahora es S/1.400 como objetivo de una próxima iteración: 4.000 chats, una apertura y una confirmación, más dos respuestas de apoyo para 10% de casos. No está implementado. S/3.500 queda como referencia sin optimizar y S/300 como alternativa WAHA. El escenario central daría S/2.380 antes de otros costos. Cobertura tecnológica: 94 operaciones a margen S/15. Anexo F explica la optimización.

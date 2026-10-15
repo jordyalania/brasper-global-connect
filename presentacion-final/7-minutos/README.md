@@ -1,6 +1,6 @@
 # OMNI by 5.5 · Pitch de siete minutos
 
-Presentación web 16:9 con 16 diapositivas principales y 6 anexos. Mantiene el rojo, negro, crema y la portada centrada de 5.5.
+Presentación web 16:9 con 16 diapositivas principales y 7 anexos. Mantiene el rojo, negro, crema y la portada centrada de 5.5.
 
 - [Abrir presentación](index.html). Desde el servidor de la carpeta superior: `/7-minutos/`.
 - [PDF de respaldo](OMNI-5.5-7-minutos.pdf), sin video interactivo.
@@ -14,7 +14,7 @@ Flechas para navegar, F para pantalla completa, S para notas. El botón Anexos s
 
 El video y las capturas se incluyen localmente para no depender de servicios externos. El runtime de Reveal y GSAP está en la carpeta superior. Conservar esa estructura al copiar. Esta entrega no cambia la aplicación ni los servicios cloud.
 
-Para continuar: editar `index.html` y `seven.css`; mantener `estructura.json`, guion, fuentes y PDF sincronizados. Los 6 anexos no cuentan en los siete minutos. No presentar proyecciones como resultados.
+Para continuar: editar `index.html` y `seven.css`; mantener `estructura.json`, guion, fuentes y PDF sincronizados. Los 7 anexos no cuentan en los siete minutos. No presentar proyecciones como resultados.
 
 ## Bloques de exposición
 
@@ -24,10 +24,12 @@ Para continuar: editar `index.html` y `seven.css`; mantener `estructura.json`, g
 4. Demo: video de 64,5 segundos.
 5. Próximos pasos y cierre con logos.
 
-La atención humana es una futura modalidad del bot, no un cuarto canal. El presupuesto tecnológico recalculado es S/3.438,60/mes, redondeado a S/3.500 con Cloud API y Meta; WAHA S/300 como alternativa. El primer mes se cuenta una sola vez. Cuentas de tiendas opcionales aparte. No incluye honorarios.
+La atención humana es una futura modalidad del bot, no un cuarto canal. El presupuesto tecnológico recalculado es S/1.359,24/mes, redondeado a S/1.400 con Cloud API optimizado como propuesta aún no implementada; WAHA S/300 como alternativa. El primer mes se cuenta una sola vez. Cuentas de tiendas opcionales aparte. No incluye honorarios.
 
 El ahorro anual se explica como capacidad operativa para capacitación, captación y seguimiento. La contribución comercial del escenario ampliado no se presenta como un resultado ya obtenido.
 
 Para el concurso, la puesta en marcha se presenta incluida como aporte del equipo. El presupuesto solo contempla servicios tecnológicos de terceros.
 
 Anexo A: cálculo de S/3.780. Anexo A.2: recuperaciones del 5%, 10% y 20%, con saldos para ambas alternativas. El importe del impacto enlaza al cálculo. La app se propone para iOS y Android.
+
+[Optimización propuesta de WhatsApp](OPTIMIZACION_WHATSAPP.md): el anexo F explica cómo agrupar datos y mensajes. Mantener separado del estado actual.

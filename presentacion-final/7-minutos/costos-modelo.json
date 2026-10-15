@@ -64,7 +64,10 @@
     "observed_result": false,
     "after_official_whatsapp_budget_pen": 280,
     "coverage_operations_official_ceil": 234,
-    "after_coupon_and_official_tech_pen": -296
+    "after_coupon_and_official_tech_pen": -296,
+    "after_optimized_official_budget_pen": 2380,
+    "coverage_operations_optimized_official_ceil": 94,
+    "after_coupon_and_optimized_official_tech_pen": 1804
   },
   "contest_setup_service_charge_pen": 0,
   "contest_setup_scope": "Desarrollo e integración incluidos como aporte del equipo en la presentación al concurso; no honorarios en el modelo.",
@@ -133,7 +136,8 @@
       "contribution_pen": 2340,
       "after_waha_budget_pen": 2040,
       "after_official_budget_pen": -1160,
-      "excludes_campaigns_coupons_other_costs": true
+      "excludes_campaigns_coupons_other_costs": true,
+      "after_optimized_official_budget_pen": 940
     },
     {
       "percent": 10,
@@ -143,7 +147,8 @@
       "contribution_pen": 3780,
       "after_waha_budget_pen": 3480,
       "after_official_budget_pen": 280,
-      "excludes_campaigns_coupons_other_costs": true
+      "excludes_campaigns_coupons_other_costs": true,
+      "after_optimized_official_budget_pen": 2380
     },
     {
       "percent": 20,
@@ -153,7 +158,94 @@
       "contribution_pen": 6660,
       "after_waha_budget_pen": 6360,
       "after_official_budget_pen": 3160,
-      "excludes_campaigns_coupons_other_costs": true
+      "excludes_campaigns_coupons_other_costs": true,
+      "after_optimized_official_budget_pen": 5260
     }
-  ]
+  ],
+  "official_whatsapp_unoptimized_reference": {
+    "effective_date": "2026-10-01",
+    "reviewed_date": "2026-10-15",
+    "source": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+    "rates_usd_per_delivered_message": {
+      "Brazil": {
+        "marketing": 0.0625,
+        "utility": 0.0068,
+        "service": 0.0068
+      },
+      "Peru": {
+        "marketing": 0.0703,
+        "utility": 0.03,
+        "service": 0.03
+      }
+    },
+    "volume_assumptions": {
+      "chats": 4000,
+      "service_responses_per_chat": 6,
+      "service_delivered": 24000,
+      "free_service_messages_assumed": 1000,
+      "service_billed": 23000,
+      "utility_billed": 0,
+      "marketing_billed": 0,
+      "all_conversations_user_initiated": true,
+      "responses_within_24h": true,
+      "receipts_included_in_service_response_count": true
+    },
+    "market_sensitivities": {
+      "Brazil": {
+        "service": 156.39999999999998,
+        "utility": 0,
+        "marketing": 0,
+        "meta_usd": 156.39999999999998,
+        "monthly_pen_with_infrastructure_and_20pct_reserve": 1005.3887999999998
+      },
+      "Peru": {
+        "service": 690.0,
+        "utility": 0,
+        "marketing": 0,
+        "meta_usd": 690.0,
+        "monthly_pen_with_infrastructure_and_20pct_reserve": 3438.6048
+      },
+      "50pct_each": {
+        "meta_usd": 423.2,
+        "monthly_pen_with_infrastructure_and_20pct_reserve": 2221.9968
+      }
+    },
+    "conservative_market": "Peru",
+    "conservative_total_pen": 3438.6,
+    "rounded_monthly_pen": 3500,
+    "includes_same_infrastructure_reserve_usd": 64.08,
+    "not_charged_on_waha": "Alternativa Cloud API, no cargo de Meta adicional a mensajes enviados por WAHA",
+    "bsp_fee_excluded": true,
+    "first_month_with_new_store_accounts_pen": 3971.2
+  },
+  "official_whatsapp_optimized_proposal": {
+    "status": "Propuesta por implementar y validar; no resultado de la demo",
+    "chats": 4000,
+    "launch_service_messages_per_chat": 1,
+    "final_utility_messages_per_chat": 1,
+    "fallback_fraction": 0.1,
+    "extra_service_messages_per_fallback": 2,
+    "service_delivered": 4800,
+    "free_service_messages_assumed": 1000,
+    "service_billed": 3800,
+    "utility_billed": 4000,
+    "marketing_billed": 0,
+    "total_delivered": 8800,
+    "average_delivered_per_chat": 2.2,
+    "rate_service_usd": 0.03,
+    "rate_utility_usd": 0.03,
+    "meta_service_usd": 114,
+    "meta_utility_usd": 120,
+    "meta_total_usd": 234,
+    "infrastructure_usd": 64.08,
+    "total_with_20pct_reserve_usd": 357.696,
+    "total_pen": 1359.24,
+    "rounded_monthly_pen": 1400,
+    "coverage_operations_ceil": 94,
+    "final_messages_assumed_all_paid_even_if_some_could_be_free": true,
+    "native_flow_pending_meta_enablement": true,
+    "web_form_alternative": true,
+    "not_an_unlimited_chatbot_budget": true
+  },
+  "presentation_whatsapp_budget_reference": "official_whatsapp_optimized_proposal"
 }

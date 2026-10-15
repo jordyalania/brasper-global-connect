@@ -2,9 +2,18 @@
 
 Revisión: **15 de octubre de 2026**. Puesta en marcha incluida como aporte del equipo al concurso. Se presupuestan servicios de terceros; sin honorarios. No se contrataron servicios ni se enviaron mensajes al calcular.
 
-## 1. Qué cifra usa ahora la presentación
 
-**Cloud API: S/3.500 mensuales de presupuesto conservador**, suponiendo que **el cliente inicia todas las conversaciones**. Incluye infraestructura, IA, mensajes de servicio de Meta y reserva del 20%. No incluye marketing ni avisos extra. La mezcla real Perú/Brasil y el número de respuestas pueden reducir o aumentar el costo. No es una factura ni límite automático de gasto.
+## Presupuesto objetivo vigente de la presentación
+
+**S/1.400/mes con Meta y tecnología**, como propuesta de próxima iteración aún no implementada. Agrupar recolección en formulario web o Flow permitiría un envío inicial y una confirmación, más dos respuestas de ayuda en 10% de casos: 2,2 envíos medios por chat. Se mantienen tarifas Perú, 4.000 chats, infraestructura y reserva del 20%.
+
+3.800 servicios pagados × US$0,03 + 4.000 confirmaciones pagadas × US$0,03 = US$234 de Meta. Con US$64,08 de infraestructura y 20% de reserva: **S/1.359,24**, presupuesto S/1.400. No se presume que una plantilla sea gratis. Detalle, comparación y condiciones en [OPTIMIZACION_WHATSAPP.md](OPTIMIZACION_WHATSAPP.md).
+
+Los S/3.500 de los apartados siguientes se conservan como referencia de seis mensajes por chat, no como el objetivo optimizado. El anexo A.2 usa ahora S/1.400 propuesto: saldos S/940, S/2.380 y S/5.260 antes de otros costos. Si la optimización no se implementa, no usar ese presupuesto para afirmar ahorro.
+
+## 1. Referencia anterior sin optimización
+
+**Cloud API sin optimizar: S/3.500 mensuales de presupuesto conservador**, suponiendo que **el cliente inicia todas las conversaciones**. Incluye infraestructura, IA, mensajes de servicio de Meta y reserva del 20%. No incluye marketing ni avisos extra. La mezcla real Perú/Brasil y el número de respuestas pueden reducir o aumentar el costo. No es una factura ni límite automático de gasto.
 
 **WAHA: S/300 mensuales como alternativa anterior.** No se suman S/300 y S/3.500. WAHA y Cloud API son transportes distintos: Meta no factura estos mismos mensajes si se envían solo por WAHA. El escenario oficial mantiene conservadoramente la misma provisión de runtime/servidor para webhook y apoyo, aunque puede optimizarse con Cloud Functions. No implica que la migración ya esté implementada.
 

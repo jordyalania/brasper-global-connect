@@ -118,7 +118,7 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 
 **En pantalla:** CUÁNTO CUESTA Y QUÉ PODRÍA DEVOLVER
 
-> La puesta en marcha está incluida. Si el cliente inicia y respondemos seis veces por chat, Meta sigue cobrando servicio después de mil mensajes gratuitos al mes. Presupuestamos conservadoramente tres mil quinientos soles mensuales, incluida tecnología, sin campañas. El escenario de tres mil setecientos ochenta deja doscientos ochenta antes de otros costos. Por eso comparamos recuperaciones del cinco, diez y veinte por ciento. WAHA conserva un presupuesto alternativo de trescientos soles. Son alternativas, no cargos que debamos sumar.
+> La puesta en marcha está incluida. Proponemos optimizar WhatsApp agrupando los datos en un formulario: un mensaje de entrada y una confirmación, con apoyo adicional en algunos casos. Aún no está implementado. Con tarifas conservadoras de Meta y reserva, el objetivo baja de tres mil quinientos a mil cuatrocientos soles mensuales. El escenario comercial dejaría dos mil trescientos ochenta antes de otros costos. Noventa y cuatro operaciones nuevas cubrirían esa tecnología. Validaremos costo y experiencia juntos.
 
 *Transición: pasar al video.*
 
@@ -171,9 +171,9 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 
 **¿La transferencia se paga automáticamente a cualquier hora?** La recepción de solicitudes puede ser 24/7. La revisión humana tiene horario; la automatización bancaria es futura.
 
-**¿El presupuesto incluye nuestros servicios?** No. La puesta en marcha está incluida como aporte al concurso. Cloud API con Meta usa S/3.500 al mes como presupuesto conservador; S/300 es la alternativa WAHA. No sumarlos. Tipo de cambio supuesto S/3,80.
+**¿El presupuesto incluye nuestros servicios?** No. La puesta en marcha se incluye en el concurso. El objetivo con Meta es S/1.400, sujeto a optimizar el recorrido; S/3.500 es la referencia sin optimizar y S/300 la alternativa WAHA. No sumarlos.
 
-**¿Cuándo se cubre ese gasto?** Con margen supuesto de S/15 por operación, 234 operaciones adicionales cubren S/3.500 con Cloud API; 20 cubren S/300 con WAHA. No es el equilibrio total del negocio ni un ROI observado.
+**¿Cuándo se cubre ese gasto?** Con margen supuesto S/15: 94 operaciones cubren S/1.400 objetivo, 234 cubren S/3.500 sin optimizar y 20 cubren S/300 con WAHA. Es cobertura tecnológica, no equilibrio total del negocio.
 
 **¿Qué incluyen las tiendas?** Si no hay cuentas previas: Apple US$99 anuales y Google US$25 de registro único. Juntas, unos S/471,20 al tipo de cambio del modelo. No garantizan aprobación de la app.
 
@@ -191,6 +191,10 @@ Cifras y condiciones: [costos tecnológicos](COSTOS_TECNOLOGICOS.md) y [fuentes 
 
 ## Presupuesto oficial de WhatsApp actualizado
 
-La exposición usa S/3.500/mes como escenario conservador de Cloud API con Meta. S/300 corresponde a WAHA y es una alternativa. No sumarlos. S/3.780 es contribución previa a estos costos: con S/3.500 quedan S/280 antes de campañas. El anexo A.2 compara 5%, 10% y 20%.
+La referencia sin optimizar es S/3.500/mes; la exposición usa S/1.400 como objetivo propuesto. S/300 corresponde a WAHA y es una alternativa. No sumarlos. S/3.780 es contribución previa a estos costos: con S/1.400 propuesto quedarían S/2.380 antes de campañas; sin optimizar quedarían S/280. El anexo A.2 compara 5%, 10% y 20%.
 
-El escenario Meta vigente supone que el cliente inicia y que las seis respuestas por chat incluyen recibos y pasos del proceso dentro de 24 horas. No carga marketing ni avisos adicionales. Desde 01/10/2026 la hoja oficial cobra servicio tras 1.000 mensajes gratuitos por número al mes. No confundir mensajes con chats.
+La referencia anterior sin optimizar supone que el cliente inicia y que las seis respuestas por chat incluyen recibos y pasos del proceso dentro de 24 horas. No carga marketing ni avisos adicionales. Desde 01/10/2026 la hoja oficial cobra servicio tras 1.000 mensajes gratuitos por número al mes. No confundir mensajes con chats.
+
+## Costo optimizado propuesto
+
+El presupuesto usado ahora es S/1.400 como objetivo de una próxima iteración: 4.000 chats, una apertura y una confirmación, más dos respuestas de apoyo para 10% de casos. No está implementado. S/3.500 queda como referencia sin optimizar y S/300 como alternativa WAHA. El escenario central daría S/2.380 antes de otros costos. Cobertura tecnológica: 94 operaciones a margen S/15. Anexo F explica la optimización.
