@@ -49,7 +49,7 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 **En pantalla:** WHATSAPP, WEB Y APP UN REGISTRO OPERATIVO
 
 
-> OMNI by 5.5 reúne tres entradas: WhatsApp, web y app. La propuesta es que la operación tenga un registro operativo sobre Firebase y una revisión interna por estados. Así, los módulos comparten un proceso comprensible. La continuidad de identidad entre canales es parte de la integración que tenemos que validar.
+> OMNI by 5.5 reúne tres entradas: WhatsApp, web y app para iOS y Android. La propuesta es que la operación tenga un registro operativo sobre Firebase y una revisión interna por estados. Así, los módulos comparten un proceso comprensible. La continuidad de identidad entre canales es parte de la integración que tenemos que validar.
 
 
 *Transición: hacer una pausa breve y avanzar.*
@@ -118,11 +118,9 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 
 **En pantalla:** CUÁNTO CUESTA Y QUÉ PODRÍA DEVOLVER
 
+> La puesta en marcha está incluida. Si el cliente inicia y respondemos seis veces por chat, Meta sigue cobrando servicio después de mil mensajes gratuitos al mes. Presupuestamos conservadoramente tres mil quinientos soles mensuales, incluida tecnología, sin campañas. El escenario de tres mil setecientos ochenta deja doscientos ochenta antes de otros costos. Por eso comparamos recuperaciones del cinco, diez y veinte por ciento. WAHA conserva un presupuesto alternativo de trescientos soles. Son alternativas, no cargos que debamos sumar.
 
-> La puesta en marcha está incluida como aporte del equipo al concurso. Presupuestamos solo trescientos soles mensuales de tecnología para operar el piloto. Para ilustrar el crecimiento, recuperar el diez por ciento de las cotizaciones supondría ciento noventa y dos operaciones mensuales. Sumadas a sesenta nocturnas distintas, serían tres mil setecientos ochenta soles de contribución, antes de tecnología, campañas y otros costos. Es un escenario, no el techo ni un resultado probado. Con margen de quince soles, veinte operaciones adicionales cubren la tecnología.
-
-
-*Transición: pasar al video al terminar esta frase.*
+*Transición: pasar al video.*
 
 ## 13. 04 / DEMO · 05:05–06:10
 
@@ -173,9 +171,9 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 
 **¿La transferencia se paga automáticamente a cualquier hora?** La recepción de solicitudes puede ser 24/7. La revisión humana tiene horario; la automatización bancaria es futura.
 
-**¿Los S/300 son nuestros servicios?** No. El desarrollo y la integración se incluyen como aporte del equipo para este concurso. Los S/300 son presupuesto mensual tecnológico del escenario, con reservas. El primer mes se cuenta una sola vez. El cálculo exacto es S/292,20 redondeado, con tipo de cambio supuesto de S/3,80.
+**¿El presupuesto incluye nuestros servicios?** No. La puesta en marcha está incluida como aporte al concurso. Cloud API con Meta usa S/3.500 al mes como presupuesto conservador; S/300 es la alternativa WAHA. No sumarlos. Tipo de cambio supuesto S/3,80.
 
-**¿Cuándo se cubre ese gasto?** Con margen supuesto de S/15 por operación, veinte operaciones adicionales cubren S/300 de tecnología. No es el equilibrio total del negocio ni un ROI observado.
+**¿Cuándo se cubre ese gasto?** Con margen supuesto de S/15 por operación, 234 operaciones adicionales cubren S/3.500 con Cloud API; 20 cubren S/300 con WAHA. No es el equilibrio total del negocio ni un ROI observado.
 
 **¿Qué incluyen las tiendas?** Si no hay cuentas previas: Apple US$99 anuales y Google US$25 de registro único. Juntas, unos S/471,20 al tipo de cambio del modelo. No garantizan aprobación de la app.
 
@@ -190,3 +188,9 @@ Cifras y condiciones: [costos tecnológicos](COSTOS_TECNOLOGICOS.md) y [fuentes 
 **¿El potencial es solo S/900 al mes?** No. Ese ejemplo aísla demanda nocturna. Nuevos canales, confianza y seguimiento pueden aportar más, pero deben medirse. El escenario ampliado de S/3.780 supone 192 operaciones de seguimiento y 60 nocturnas distintas a margen S/15, antes de campañas y tecnología. No es un límite ni un resultado.
 
 **¿Ya tienen los datos de las 64 consultas?** El promedio no demuestra que todas dejaron contacto. Hay que registrar intención y motivos donde haya datos disponibles y autorización. Las operaciones centralizadas ayudan, pero no sustituyen una captura de cotizaciones no convertidas.
+
+## Presupuesto oficial de WhatsApp actualizado
+
+La exposición usa S/3.500/mes como escenario conservador de Cloud API con Meta. S/300 corresponde a WAHA y es una alternativa. No sumarlos. S/3.780 es contribución previa a estos costos: con S/3.500 quedan S/280 antes de campañas. El anexo A.2 compara 5%, 10% y 20%.
+
+El escenario Meta vigente supone que el cliente inicia y que las seis respuestas por chat incluyen recibos y pasos del proceso dentro de 24 horas. No carga marketing ni avisos adicionales. Desde 01/10/2026 la hoja oficial cobra servicio tras 1.000 mensajes gratuitos por número al mes. No confundir mensajes con chats.

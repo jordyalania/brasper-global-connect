@@ -1,12 +1,12 @@
 # Revisión de entrega
 
-- 16 diapositivas principales y 5 anexos.
+- 16 diapositivas principales y 6 anexos.
 - Guion y cronómetro: 420 segundos en total.
 - Video local de 64,5 segundos, sin audio original. Reproducción y pausa al salir de su diapositiva comprobadas en navegador.
 - Navegación a anexos y regreso al pitch comprobados.
 - Cronómetro comprobado en navegador.
 - Recursos locales e imágenes comprobados, sin faltantes.
-- PDF de 21 páginas con texto y revisión visual. El video se representa por un fotograma estático en PDF.
+- PDF de 22 páginas con texto y revisión visual. El video se representa por un fotograma estático en PDF.
 - Cifras y proyecciones separadas de resultados observados.
 
 Esta revisión corresponde a los materiales de presentación. No ejecuta transferencias ni acredita integración bancaria, fiscal, Meta o publicación en tiendas.
@@ -16,3 +16,6 @@ Esta revisión corresponde a los materiales de presentación. No ejecuta transfe
 
 - Crecimiento: 192 recuperadas hipotéticas + 60 nocturnas distintas = 252; a M=S/15, S/3.780 antes de campañas y tecnología.
 - Ahorro operativo explicado como capacidad reasignable, sin presuponer despidos ni caja ya liberada.
+
+- Meta recalculado para conversaciones iniciadas por el usuario: 23.000 mensajes facturables × US$0,03 = US$690. Con infraestructura y reserva: S/3.438,60, presupuesto S/3.500.
+- S/3.780 enlaza al anexo A; A.2 compara 5%, 10% y 20%.

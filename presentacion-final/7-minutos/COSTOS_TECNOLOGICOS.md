@@ -1,137 +1,117 @@
-# Costos tecnológicos de OMNI by 5.5
+# Costos tecnológicos · escenario con Meta
 
-Revisión de precios públicos: **15 de octubre de 2026**. Para la presentación al concurso, **desarrollo e integración se incluyen como aporte del equipo, sin cobro al proyecto en esta ecuación**. El cálculo contempla únicamente servicios tecnológicos de terceros. Importes presupuestados, no cargos comprobados en las cuentas. No se contrataron ni activaron servicios al preparar este cálculo.
+Revisión: **15 de octubre de 2026**. Puesta en marcha incluida como aporte del equipo al concurso. Se presupuestan servicios de terceros; sin honorarios. No se contrataron servicios ni se enviaron mensajes al calcular.
 
-## Resultado para presentar
+## 1. Qué cifra usa ahora la presentación
 
-**Piloto: aproximadamente S/300 mensuales** para web, bot, IA y backend, bajo las condiciones de este documento. Cálculo: US$64,08 de subtotal + 20% de reserva = US$76,896; a un **tipo de cambio supuesto de S/3,80** = **S/292,20**, redondeado a S/300. El tipo de cambio es una entrada del modelo, no una cotización bancaria actual.
+**Cloud API: S/3.500 mensuales de presupuesto conservador**, suponiendo que **el cliente inicia todas las conversaciones**. Incluye infraestructura, IA, mensajes de servicio de Meta y reserva del 20%. No incluye marketing ni avisos extra. La mezcla real Perú/Brasil y el número de respuestas pueden reducir o aumentar el costo. No es una factura ni límite automático de gasto.
 
-**Puesta en marcha: incluida como aporte del equipo al concurso. Primer mes de servicios: S/300.** No se identificó una licencia obligatoria adicional de instalación en este escenario. El primer mes ya está incluido en el gasto mensual: no sumar S/300 de arranque más S/300 de operación por ese mismo mes. Activar cuentas de pago o aportar saldo no equivale a una tarifa de instalación.
+**WAHA: S/300 mensuales como alternativa anterior.** No se suman S/300 y S/3.500. WAHA y Cloud API son transportes distintos: Meta no factura estos mismos mensajes si se envían solo por WAHA. El escenario oficial mantiene conservadoramente la misma provisión de runtime/servidor para webhook y apoyo, aunque puede optimizarse con Cloud Functions. No implica que la migración ya esté implementada.
 
-**Publicación opcional en ambas tiendas:** cuentas nuevas de Apple y Google suman US$124 ≈ S/471,20 en el primer año. Primer mes con dichas cuentas: S/300 + S/471,20 = **S/771,20**. Las cuentas de tiendas no son necesarias para mostrar la web o probar con Expo Go. La aprobación para publicar no está garantizada por pagar.
+## 2. El usuario inicia: qué cambia y qué no
 
-## 1. Arquitectura presupuestada
+Se eliminan del presupuesto los mensajes de marketing y los avisos de utilidad adicionales. Las respuestas, pasos y comprobantes se incluyen en **seis mensajes de servicio por chat**, todos dentro de la ventana de 24 horas. No se cuentan dos veces como utilidad.
 
-Web de Lovable con backend Firebase externo; WhatsApp mediante WAHA alojado en un VPS; app Expo dentro de su nivel gratuito; IA de texto presupuestada con Haiku 5.5 según el material del equipo. Este es un escenario de infraestructura, no confirmación del proveedor contratado ni del modelo exacto desplegado en cada módulo. El contrato web también menciona un asistente separado: si usa otro modelo, recalcular su consumo en vez de sumarlo dos veces.
+La [documentación técnica vigente de Meta](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing) y su hoja fechada **01/10/2026** establecen una franquicia de **1.000 mensajes de servicio por número empresarial y mes**. Superado ese nivel hay costo por mensaje entregado, incluso cuando el usuario inició. No son 1.000 chats gratuitos. No se aplica la categoría Meta Business Agent: la IA presupuestada es de un tercero.
 
-No incluye el backend Supabase legado ni otro servidor de facturación. No se añade una segunda base de datos al costo de Firebase. No usa Claude Pro como si incluyera ilimitadamente llamadas a la API.
+La página comercial genérica todavía describía servicio gratuito, por lo que se prioriza la hoja técnica fechada. El archivo original está en [fuentes](fuentes/README.md). No se presupuestan descuentos de volumen ni gratuidad por anuncios de clic a WhatsApp, para ser conservadores. Publicidad tampoco se incluye.
 
-## 2. Supuestos de carga
+## 3. Tarifas verificadas y volumen supuesto
 
-- 4.000 conversaciones de IA al mes **entre WhatsApp y app en conjunto**. Es una aproximación presupuestaria coherente con 131 chats diarios, no una medición de llamadas a IA. No sumar 4.000 por canal.
-- 12.000 tokens de entrada y 2.000 de salida **acumulados por conversación**, incluyendo instrucciones, historial y llamadas a herramientas. No son tokens por mensaje.
-- 10% extra de consumo de IA por reintentos y variaciones. Sin descuentos de caché ni procesamiento batch. Prompts por llamada inferiores a 100.000 tokens.
-- Unas 2.000 operaciones al mes para dimensionar el backend, sin afirmar que sean nuevos clientes. Referencia de carga: 67 × 30 ≈ 2.010.
-- Ejemplo de archivos: 2 MB por operación, unos 4 GB nuevos por mes y 12 GB con retención de 90 días. Tamaño y retención son supuestos de costos, no cambios de configuración realizados. Descargas, logs, consultas y funciones también consumen.
-- Una sola sesión WAHA en un VPS de referencia de 2 GiB. Debe probarse memoria y estabilidad; no es una validación de capacidad productiva.
-- Dominio y subdominio existentes: cero costo incremental de compra para este piloto. Renovación general del dominio no imputada exclusivamente al proyecto.
+| Mercado destinatario | Servicio USD/mensaje | Utilidad USD/mensaje | Marketing USD/mensaje |
+|---|---:|---:|---:|
+| Perú | 0,0300 | 0,0300 | 0,0703 |
+| Brasil | 0,0068 | 0,0068 | 0,0625 |
 
-## 3. Desglose mensual del piloto
-
-| Recurso | USD/mes | PEN/mes | Qué representa |
-|---|---:|---:|---|
-| Lovable Pro | 25,00 | 95,00 | Precio público mensual del plan, con dominio personalizado. Uso y recargas sujetos a sus límites. |
-| VPS del bot, 2 GiB | 12,00 | 45,60 | Referencia DigitalOcean Basic. No implica que ya esté contratado allí. |
-| Backup semanal del VPS | 2,40 | 9,12 | Opción del 20% del precio del VPS. No sustituye backup de Firebase. |
-| Firebase | 15,00 | 57,00 | **Provisión**, no tarifa oficial plana: funciones, Firestore, Storage, transferencia, logs y recursos asociados. |
-| IA por API | 9,68 | 36,78 | Cálculo por tokens, con 10% adicional. |
-| WAHA Community | 0,00 | 0,00 | Licencia de software libre en la versión consultada; servidor contado arriba. |
-| Expo Free | 0,00 | 0,00 | Dentro de cuotas. No incluye Apple/Google ni garantiza todas las builds necesarias. |
-| Dominio existente | 0,00 | 0,00 | Sin nueva compra. |
-| **Subtotal** | **64,08** | **243,50** | Suma del escenario. |
-| Reserva general del 20% | 12,816 | 48,70 | Variación de consumo, divisa, recargas y otros desvíos menores. |
-| **Total calculado** | **76,896** | **292,20** | Antes de impuestos. |
-| **Presupuesto redondeado** | — | **300,00** | Referencia para el pitch, no techo automático de facturación. |
-
-### IA: fórmula reproducible
-
-Tarifa verificada de Haiku 5.5: US$0,10 por millón de tokens de entrada y US$0,50 de salida para prompts de hasta 100.000 tokens.
+Se usa **Perú para todo el volumen** como caso conservador. No se afirma que todos los clientes estén en Perú. Utilidad y marketing se muestran para referencia, pero se cuentan **cero mensajes** en el escenario actual.
 
 ```text
-4.000 × 12.000 = 48 millones de tokens de entrada
-4.000 × 2.000 = 8 millones de tokens de salida
-48 × 0,10 + 8 × 0,50 = US$8,80
-8,80 × 1,10 = US$9,68 al mes
+4.000 chats/mes × 6 respuestas entregadas = 24.000 mensajes de servicio
+24.000 − 1.000 gratuitos = 23.000 facturables
+23.000 × US$0,03 = US$690 de Meta
 ```
 
-El cálculo solo cubre texto. OCR, imágenes, voz, búsqueda y herramientas con cargos propios no están incluidos. Una conversación larga o un modelo distinto puede elevar el costo. No se llamó a la API con datos de clientes para elaborar este presupuesto.
+4.000 chats y seis respuestas son supuestos de dimensionamiento. Se asigna todo ese volumen a WhatsApp para la sensibilidad conservadora; si parte ocurre en web o app, contar solo los mensajes entregados por WhatsApp. La ventana de 24 horas limita qué mensajes pueden enviarse, no vuelve ilimitadamente gratuito el servicio según esta hoja vigente. Si hay seguimiento iniciado por la empresa o mensajes fuera de ventana, recalcular plantillas y campañas.
 
-### Firebase: por qué no prometer costo cero
+## 4. Infraestructura e IA: base común
 
-Blaze cobra por consumo con cuotas sin costo según producto. La tabla oficial muestra, entre otras, 50.000 lecturas y 20.000 escrituras diarias para Firestore Standard, y cuotas de funciones. No son una garantía de factura cero: región, generación de funciones, tiempo de ejecución, Storage, transferencia, builds y recursos de Google Cloud cuentan. La región de funciones del proyecto web es `southamerica-east1`; las cuotas gratuitas de buckets nuevos indicadas para determinadas regiones de EE. UU. **no se trasladan automáticamente a Brasil**. US$15 es una provisión inicial a contrastar con billing y carga, no un precio de Firebase.
+| Recurso | USD/mes | Qué representa |
+|---|---:|---|
+| Lovable Pro | 25,00 | Precio público mensual; dominio personalizado y créditos limitados. |
+| Runtime/VPS de apoyo | 12,00 | Referencia de 2 GiB en DigitalOcean. No acredita proveedor contratado. |
+| Backup semanal del runtime | 2,40 | 20% del VPS de referencia. No sustituye backup de Firebase. |
+| Firebase | 15,00 | **Provisión**, no tarifa plana: Firestore, funciones, Storage, tráfico y logs. |
+| IA de texto | 9,68 | Cálculo de tokens con 10% adicional. |
+| Expo Free y dominio existente | 0,00 | Dentro de cuotas; sin nueva compra de dominio. |
+| **Subtotal infraestructura e IA** | **64,08** | Base común mantenida de forma conservadora. |
 
-### Lovable: alcance de los US$25
+IA: 4.000 conversaciones × (12.000 tokens entrada × US$0,10/M + 2.000 salida × US$0,50/M) × 1,10 = **US$9,68** con Haiku 5.5, sin descuentos. Tokens acumulados por conversación, incluido historial. Si cambia modelo, uso o se añade voz/OCR, recalcular. No sumar 4.000 conversaciones por cada canal.
 
-Es el plan Pro mensual consultado. Incluye una cantidad limitada de créditos y habilita dominio personalizado; no equivale a hosting o consumo ilimitados. Su documentación actual reúne construcción y ejecución bajo créditos. El backend Firebase se paga en Google, no vuelve a presupuestarse como base de datos de Lovable. Revisar hosting, tráfico y créditos reales del workspace. Si el plan ya está pagado y se comparte con otros proyectos, distinguir costo asignado de desembolso incremental.
+Firebase: la región web de referencia es `southamerica-east1`. Las cuotas gratuitas por producto y región no garantizan costo cero. Se provisionan US$15, a contrastar con billing, adjuntos, retención y carga. Ejemplo de almacenamiento: 2.000 operaciones × 2 MB = 4 GB nuevos/mes; 90 días = 12 GB, como supuesto y no cambio realizado.
 
-## 4. Arranque y publicación móvil
+Lovable: US$25 no implica consumo ilimitado. Revisar hosting y recargas; Firebase se paga aparte en Google, sin duplicar una base de datos Lovable. El runtime adicional es una provisión de transición y puede eliminarse si toda la integración cabe de forma validada en las funciones del backend.
 
-| Concepto | Cuándo se paga | Importe de referencia |
-|---|---|---:|
-| Primer mes del piloto | Al empezar a operar | S/300 presupuestados; se cuentan una sola vez |
-| Apple Developer Program | Opcional, anual | US$99 ≈ S/376,20 por año |
-| Google Play Console | Opcional, registro único | US$25 ≈ S/95,00 |
-| Ambas tiendas, si son cuentas nuevas | Primer año | US$124 ≈ S/471,20 |
-| Primer mes más ambas cuentas | Si se publicará en tiendas | S/771,20 |
+## 5. Total con Meta y sensibilidad por país
 
-El siguiente año Apple renueva; Google no repite el registro único. Si el cliente ya tiene cuentas utilizables, no volver a cobrarles una inscripción. Expo Free no evita el cargo de las tiendas. Expo Starter es opcional a US$19/mes más uso: no se suma al piloto base. No se cotiza una compra de equipos, SIM o dominio nuevo porque no hay una necesidad ni proveedor confirmados. Si se requieren, añadir cotización.
+| Escenario, mismo volumen | Meta USD/mes | Total PEN con infraestructura y 20% | Presupuesto redondeado |
+|---|---:|---:|---:|
+| Todo Brasil | 156,40 | 1.005,39 | S/1.100 |
+| Mitad Perú y mitad Brasil | 423,20 | 2.222,00 | S/2.300 |
+| **Todo Perú, conservador del pitch** | **690,00** | **3.438,60** | **S/3.500** |
 
-## 5. Sensibilidad y presupuesto anual
+El caso mixto reparte proporcionalmente el volumen facturable después de la franquicia de un solo número. No aplica dos franquicias. No es una mezcla de clientes comprobada.
 
-| Escenario | Supuestos principales | Total estimado con reserva |
-|---|---|---:|
-| Piloto base | 4.000 chats, 12k/2k tokens, VPS 2 GiB, Firebase US$15, Expo Free | S/292,20/mes; presupuesto S/300 |
-| Mayor uso | 8.000 chats, 24k/4k tokens, VPS 4 GiB US$24, Firebase US$30, Expo Starter US$19 | S/645,33/mes; presupuesto S/650 |
+```text
+US$64,08 de infraestructura + US$690 de Meta = US$754,08
+754,08 × 1,20 de reserva = US$904,896
+904,896 × S/3,80 = S/3.438,60
+Presupuesto conservador: S/3.500/mes
+```
 
-El segundo escenario es una sensibilidad, no una proyección de ventas. No escala todo linealmente: aumenta conversación, tamaño del servidor, provisión y plan de app. Detalle en [costos-modelo.json](costos-modelo.json).
+El tipo de cambio **S/3,80 es un supuesto de presupuesto**, no la cotización bancaria actual. Antes de impuestos y cargos no incluidos. La reserva no es un tope de facturación. El primer mes se cuenta una sola vez; desarrollo incluido no significa consumo de nube gratuito.
 
-Presupuesto piloto por 12 meses: **S/3.600**. Con cuentas nuevas de ambas tiendas: **S/4.071,20 el primer año**, antes de impuestos y exclusiones. Con ambas cuentas ya creadas, no sumar S/471,20. No aplicar la reserva otra vez a esos totales redondeados.
+## 6. Escenarios comerciales: anexo A y A.2
 
-## 6. Costo-beneficio para el pitch
+Margen supuesto: **S/15 por operación**. 30 días. Seguimiento de 64 cotizaciones diarias y 60 operaciones nocturnas adicionales en cada escenario. Solo sumar ventas incrementales distintas, con datos y autorización disponibles.
 
-Se conserva el ejemplo de 60 operaciones nocturnas nuevas × S/15 = S/900 mensuales de contribución antes de costos adicionales. Con presupuesto tecnológico S/300: **S/600 mensuales de saldo del escenario**, antes de costos humanos, bancarios y otros no incluidos en el margen. No es ganancia neta observada.
+| Recuperación hipotética | Seguimiento | Total con 60 nocturnas | Contribución antes de tecnología | Tras WAHA S/300 | Tras Cloud API S/3.500 |
+|---|---:|---:|---:|---:|---:|
+| 5% | 96 | 156 | S/2.340 | S/2.040 | **−S/1.160** |
+| 10% | 192 | 252 | S/3.780 | S/3.480 | **S/280** |
+| 20% | 384 | 444 | S/6.660 | S/6.360 | **S/3.160** |
 
-Punto de cobertura **solo tecnológica**: S/300 ÷ S/15 = **20 operaciones adicionales al mes**. Si se pagan las dos cuentas de tiendas en el primer mes: S/771,20 ÷ S/15 = 51,41, es decir **52 operaciones** para cubrir ese desembolso bajo el mismo margen supuesto. No usar estas cuentas como equilibrio total del negocio.
+Son saldos antes de campañas, cupones, personal adicional y otros costos fuera de M. No son beneficio neto ni resultados observados. El costo de mensajes se mantiene fijo dentro de este sobre de volumen para comparar conversión; si el seguimiento aumenta las respuestas por encima de seis o inicia plantillas, recalcular Meta y no conservar artificialmente S/3.500.
 
-El escenario salarial de S/109.200 anuales se mantiene aparte: ahorro operativo potencial medido como equivalente de capacidad bruta, no caja ya ahorrada. El objetivo es capacitar y reasignar tareas a captación y seguimiento, sin plantear despidos. No se suma al retorno del piloto ni se calcula un ROI de servicios profesionales, que están fuera de este encargo.
+Fórmula: contribución = (64 × recuperación × 30 + 60) × 15. S/3.780 corresponde al 10%, no S/3.790.
 
-## 7. WhatsApp: WAHA y Cloud API son presupuestos distintos
+Punto de cobertura solo tecnológica: **234 operaciones** para S/3.500 (redondeo superior de 3.500/15). WAHA: 20 para S/300. No es equilibrio total del negocio ni ROI.
 
-La base usa WAHA porque así se describe el módulo aportado. La versión Community consultada no tiene tarifa de licencia, pero requiere servidor y mantenimiento. No es la Cloud API oficial. Si el equipo necesita otra edición o alojamiento gestionado, añadir su costo confirmado.
+Cupones: si C es el descuento medio aplicado a cada venta recuperada, contribución = recuperadas × (15 − C) + 60 × 15. Al 10% con C=S/3: S/3.204 antes de tecnología, y **−S/296** después de S/3.500, aún antes de otros costos. Si el margen informado ya descuenta cupones, no restarlos otra vez.
 
-Para migrar a Cloud API y Flow, **reemplazar** el supuesto WAHA/VPS por el esquema que realmente se use. La tarifa de Meta depende de mercado, categoría, volumen y reglas vigentes. La documentación consultada contempla 1.000 mensajes de servicio gratuitos mensuales por número y cobros a partir del siguiente, salvo otras ventanas gratuitas aplicables. Por ello **no se asume mensajería oficial ilimitada gratis**. Plantillas, seguimientos, posibles cargos de un BSP y servidor webhook deben presupuestarse con el tráfico Perú/Brasil. Esa migración no está incluida en los S/300.
+El ahorro operativo anual S/109.200 se mantiene aparte como equivalente salarial de capacidad liberada para capacitación, captación y seguimiento. No presume despidos ni caja libre y no se suma como ingreso comercial.
 
-## 8. Exclusiones y comprobaciones antes de aprobar gasto
+## 7. Arranque, app y exclusiones
 
-Honorarios y desarrollo; personal de revisión; impuestos, retenciones y cargos de tarjeta; marketing y retargeting; SMS/OTP; correo transaccional no dimensionado; licencias fiscales productivas; comisiones bancarias o fintech; APIs de validación de identidad; OCR/voz; infraestructura de alta disponibilidad y planes de soporte; auditorías y nuevas obligaciones regulatorias. Si alguno pasa a ser requisito del piloto, deja de ser opcional y debe añadirse al presupuesto.
+Puesta en marcha incluida en el concurso. Primer mes oficial presupuestado: **S/3.500**. Publicar opcionalmente en tiendas con cuentas nuevas añade Apple US$99/año y Google US$25 de registro único: US$124 ≈ **S/471,20**, al tipo de cambio supuesto. Primer mes con ambas cuentas nuevas: **S/3.971,20**. No repetir registros de cuentas existentes. No garantiza aprobación. La app se propone para iOS y Android; no se afirma publicación actual.
 
-Confirmar proveedor y edición WAHA, modelo exacto de IA, plan Lovable efectivo, facturas Firebase, región del bucket, tamaño y retención de adjuntos, tráfico del portal, costo de correo si se habilita y cuentas de tiendas existentes. Las alertas de presupuesto no equivalen a un corte automático del gasto.
+Expo Starter US$19/mes es opcional, no incluido en la base. WAHA Community consultado tiene licencia gratuita, sin cargos Meta de Cloud API para sus mismos mensajes; requiere servidor. Se conserva [costos-desglose.csv](costos-desglose.csv) como desglose del escenario WAHA y [costos-meta-conservador.csv](costos-meta-conservador.csv) para el oficial. Son alternativas.
 
-## Fuentes primarias consultadas
+Con Cloud API: presupuesto anual S/42.000; primer año con ambas cuentas nuevas S/42.471,20. Con WAHA: S/3.600 y S/4.071,20 respectivamente. No sumar los dos presupuestos.
 
-- [Lovable Pricing](https://lovable.dev/pricing): Pro mensual US$25.
-- [Lovable: créditos y uso](https://docs.lovable.dev/introduction/credits-and-usage): construcción, hosting, Cloud y gateway consumen créditos bajo sus condiciones.
-- [Firebase Pricing](https://firebase.google.com/pricing): cuotas y consumo por producto y región.
-- [DigitalOcean Droplets](https://www.digitalocean.com/pricing/droplets): Basic 2 GiB US$12/mes, 4 GiB US$24/mes y backup semanal al 20%. Referencia, no contrato actual.
-- [WAHA](https://waha.devlike.pro/): edición Community gratuita y alojamiento propio.
-- [Claude API Pricing](https://platform.claude.com/docs/en/about-claude/pricing): tarifas de tokens Haiku 5.5 usadas en el escenario.
-- [Expo Pricing](https://expo.dev/pricing): Free y Starter US$19/mes más uso. Free publica límites de builds y 1.000 usuarios activos para actualizaciones.
-- [Apple Developer Program](https://developer.apple.com/programs/enroll/): US$99/año, sujeto a precio local.
-- [Google Play Console](https://support.google.com/googleplay/android-developer/answer/6112435#zippy=%2Cstep-pay-registration-fee): US$25 de registro único.
-- [WhatsApp Business Platform Pricing](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing): esquema oficial independiente de WAHA.
+No incluidos: honorarios; impuestos y cargos de tarjeta; un BSP con cuota propia; marketing pagado o cupones; correo no dimensionado; SMS/OTP; licencias fiscales; comisiones de bancos o fintech; nuevas validaciones de identidad; voz/OCR; planes de alta disponibilidad y soporte; SIM, equipos o dominios nuevos si se requieren. Añadirlos al contratar si pasan a ser requisito. El ejemplo presupone acceso directo a Cloud API, no un plan de partner adicional.
 
-Los precios públicos no acreditan lo que ya se paga en las cuentas. Conservar la fecha de revisión y recalcular antes de contratar. [CSV](costos-desglose.csv) y [modelo JSON](costos-modelo.json) permiten revisar entradas y sumas.
+Antes de aprobar: verificar cantidad de respuestas por chat, país del destinatario, número de teléfonos y franquicias efectivas, modalidad de mensajes, margen real y facturas. Si una actualización posterior de Meta cambia la regla de servicio, recalcular desde la hoja vigente.
 
-## 9. Crecimiento comercial: potencial mayor que la demanda nocturna
+## Fuentes primarias
 
-S/900 es un ejemplo parcial, no el total ni el techo. Los canales adicionales, la claridad del seguimiento y la confianza pueden mejorar captación o conversión, pero no hay una medición causal para asignarles un porcentaje.
+- [Meta: documentación de precios](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing), hoja USD vigente 01/10/2026 y franquicia de servicio. [Original descargado y resumen](fuentes/README.md).
+- [Lovable Pricing](https://lovable.dev/pricing) y [créditos y uso](https://docs.lovable.dev/introduction/credits-and-usage).
+- [Firebase Pricing](https://firebase.google.com/pricing).
+- [DigitalOcean Droplets](https://www.digitalocean.com/pricing/droplets).
+- [WAHA Community](https://waha.devlike.pro/).
+- [Claude API Pricing](https://platform.claude.com/docs/en/about-claude/pricing).
+- [Expo Pricing](https://expo.dev/pricing).
+- [Apple Developer Program](https://developer.apple.com/programs/enroll/).
+- [Google Play Console](https://support.google.com/googleplay/android-developer/answer/6112435#zippy=%2Cstep-pay-registration-fee).
 
-El escenario ampliado del pitch combina, **solo si son operaciones incrementales distintas**:
-
-- Seguimiento: 64 cotizaciones/día × recuperación supuesta del 10% × 30 días = 192 operaciones. A M=S/15: S/2.880.
-- Nueva demanda nocturna: 10 consultas nuevas/día × 20% × 30 = 60 operaciones. A M=S/15: S/900.
-- Total: 252 operaciones, **S/3.780 de contribución** antes de tecnología, campañas y costos no incluidos en M. Menos S/300 de tecnología: S/3.480, todavía antes de campañas, trabajo comercial adicional y otros costos.
-
-Si se usan cupones, descontarlos del margen y evitar contarlos otra vez como gasto: con costo medio de cupón C aplicado solo a las 192 recuperadas, contribución = 192 × (15 − C) + 60 × 15. Restar después tecnología y demás costos no incorporados. Ejemplo hipotético C=S/3: S/3.204 antes de tecnología; S/2.904 después de S/300, aún antes de otros costos. No asignar estos resultados al sistema como ventas realizadas.
-
-No todas las 64 cotizaciones tienen datos disponibles ni todas admiten seguimiento. Registrar intención, motivo y autorización; priorizar contactos por el equipo, probar campaña contra un grupo comparable y medir compras incrementales, margen después del cupón y costo por conversión. No sumar por separado una mejora genérica de confianza o un nuevo canal si ya está incluida en las mismas ventas.
+Modelo reproducible en [costos-modelo.json](costos-modelo.json). Precios públicos y supuestos no acreditan facturación de las cuentas ni ejecución real de la integración.

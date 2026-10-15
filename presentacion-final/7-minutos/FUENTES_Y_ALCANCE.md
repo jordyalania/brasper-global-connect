@@ -26,12 +26,16 @@ Equipo: David, Binni, Jordy y Melani, según el material aportado. Los logos se 
 
 ## Costo-beneficio y KPIs
 
-- El presupuesto operativo se recalculó con fuentes primarias el 15/10/2026: S/292,20, redondeado a S/300/mes. Ver [COSTOS_TECNOLOGICOS.md](COSTOS_TECNOLOGICOS.md). Mezcla tarifas verificadas y provisiones declaradas de consumo.
-- El arranque tecnológico presupone el primer mes de servicios (S/300), contado una sola vez. Desarrollo e integración incluidos como aporte del equipo en el concurso, sin cobro en la ecuación. Publicación en ambas tiendas con cuentas nuevas: +S/471,20 el primer año.
-- S/900 de contribución hipotética menos S/300 de presupuesto operativo deja S/600 antes de implementación y otros costos no incluidos. No es beneficio neto ni ROI observado.
+- El presupuesto operativo se recalculó con fuentes primarias el 15/10/2026: S/3.438,60, redondeado a S/3.500/mes para Cloud API conservador, con WAHA S/300 como alternativa. Ver [COSTOS_TECNOLOGICOS.md](COSTOS_TECNOLOGICOS.md). Mezcla tarifas verificadas y provisiones declaradas de consumo.
+- El arranque tecnológico presupone el primer mes de servicios Cloud API (S/3.500), contado una sola vez. Desarrollo e integración incluidos como aporte del equipo en el concurso, sin cobro en la ecuación. Publicación en ambas tiendas con cuentas nuevas: +S/471,20 el primer año.
+- S/3.780 de contribución hipotética menos S/3.500 de presupuesto oficial conservador deja S/280 antes de otros costos. El esquema WAHA de S/300 es una alternativa. No es beneficio neto ni ROI observado.
 - Los indicadores de tiempo, errores y productividad necesitan una línea base del piloto. No se ofrece un porcentaje de reducción ya logrado.
 - Se mantienen tres canales. El contacto con un humano, Flow, CRM, alertas y banco/fintech aparecen como ampliaciones futuras.
 
 ## Interpretación del ahorro y del crecimiento
 
 El ahorro de S/109.200/año es un equivalente bruto de capacidad operativa liberada en el escenario. La propuesta es capacitar y reasignar al equipo hacia captación y seguimiento; no presupone despidos ni reducción efectiva de nómina. El escenario de S/3.780 combina seguimiento y demanda nocturna sin solapamientos, antes de campañas y tecnología. Nuevos canales y confianza son hipótesis de mejora sin importe causal asignado. La captura de datos de todas las cotizaciones no se presume implementada.
+
+## Actualización de Meta y sensibilidad
+
+Supuesto vigente: el usuario inicia todas las conversaciones. Seis respuestas de servicio por chat, 4.000 chats, sin marketing ni utilidad adicional. La hoja oficial desde 01/10/2026 cobra servicio tras 1.000 mensajes gratuitos/mes por número. Presupuesto conservador con tarifa Perú: S/3.500/mes. Anexo A.2 muestra 5%, 10% y 20%. Priorizar el cálculo y fuentes de COSTOS_TECNOLOGICOS.md sobre los ejemplos históricos.

@@ -19,3 +19,7 @@ Anexo fuera del tiempo de exposición. Los próximos pasos se priorizan con el n
 ## anexo-costos
 
 Desglose del presupuesto tecnológico. Fuentes y límites en COSTOS_TECNOLOGICOS.md. No duplicar el primer mes como costo de instalación.
+
+## anexo-a2
+
+Comparación del 5%, 10% y 20% de recuperación, más 60 nocturnas distintas. M=S/15 y 30 días. Saldos tras WAHA S/300 o Cloud API S/3.500, como alternativas, antes de campañas.

@@ -20,7 +20,7 @@
 
 ## 05. 02 / SOLUCIÓN PROPUESTA · omni · 25 segundos
 
-25 s. El diseño de OMNI tiene tres entradas: conversación en WhatsApp, formulario web y aplicación móvil. El punto de encuentro es el registro operativo sobre Firebase y su revisión interna. Esto permite ordenar el recorrido por estados. Los módulos se desarrollan por separado. No prometemos recuperación automática al cambiar de dispositivo: esa unión de identidad todavía necesita validación.
+25 s. El diseño de OMNI tiene tres entradas: conversación en WhatsApp, formulario web y aplicación para iOS y Android. El punto de encuentro es el registro operativo sobre Firebase y su revisión interna. Esto permite ordenar el recorrido por estados. Los módulos se desarrollan por separado. No prometemos recuperación automática al cambiar de dispositivo: esa unión de identidad todavía necesita validación.
 
 ## 06. 02 / SOLUCIÓN PROPUESTA · whatsapp · 30 segundos
 
@@ -48,7 +48,7 @@
 
 ## 12. 03 / IMPACTO · COSTO-BENEFICIO · costobeneficio · 35 segundos
 
-35 s. La puesta en marcha está incluida como aporte del equipo al concurso. Presupuestamos solo trescientos soles mensuales de tecnología para operar el piloto. Para ilustrar el crecimiento, recuperar el diez por ciento de las cotizaciones supondría ciento noventa y dos operaciones mensuales. Sumadas a sesenta nocturnas distintas, serían tres mil setecientos ochenta soles de contribución, antes de tecnología, campañas y otros costos. Es un escenario, no el techo ni un resultado probado. Con margen de quince soles, veinte operaciones adicionales cubren la tecnología.
+35 s. La puesta en marcha está incluida. Si el cliente inicia y respondemos seis veces por chat, Meta sigue cobrando servicio después de mil mensajes gratuitos al mes. Presupuestamos conservadoramente tres mil quinientos soles mensuales, incluida tecnología, sin campañas. El escenario de tres mil setecientos ochenta deja doscientos ochenta antes de otros costos. Por eso comparamos recuperaciones del cinco, diez y veinte por ciento. WAHA conserva un presupuesto alternativo de trescientos soles. Son alternativas, no cargos que debamos sumar.
 
 ## 13. 04 / DEMO · video · 65 segundos
 
