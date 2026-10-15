@@ -47,3 +47,5 @@ El anexo G distingue conversación con IA, reglas deterministas y validación hu
 ## Video en PowerPoint
 
 `OMNI-5.5-7-minutos-video-final.pptx` y el PPTX principal contienen la demo incrustada como video nativo. Se reproduce automáticamente al entrar en la diapositiva 13, dentro del recuadro y con el texto inferior visible. El PDF conserva una imagen estática.
+
+Las notas del PowerPoint indican la duración, el inicio y el cierre acumulado de cada lámina en minuto:segundo y en segundos desde el inicio. Los anexos quedan fuera de los siete minutos.
