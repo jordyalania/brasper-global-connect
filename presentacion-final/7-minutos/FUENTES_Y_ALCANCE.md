@@ -23,3 +23,11 @@ El alcance web revisado se documenta en [ESTADO_MODULAR.md](../ESTADO_MODULAR.md
 ## Identidad y organización
 
 Equipo: David, Binni, Jordy y Melani, según el material aportado. Los logos se conservan en color, sin distorsionar proporciones. Organizan: She Leads Data e Ingenia Lab. Los demás aliados se presentan tal como aparecen en la página final aportada.
+
+## Costo-beneficio y KPIs
+
+- El presupuesto operativo de aproximadamente S/300/mes procede del PDF aportado. Se usa solo como hipótesis de presupuesto total, sin validar sus precios de modelos ni tarifas de proveedores.
+- La implementación se mantiene «por cotizar»: no existe una cifra aprobada en las fuentes revisadas.
+- S/900 de contribución hipotética menos S/300 de presupuesto operativo deja S/600 antes de implementación y otros costos no incluidos. No es beneficio neto ni ROI observado.
+- Los indicadores de tiempo, errores y productividad necesitan una línea base del piloto. No se ofrece un porcentaje de reducción ya logrado.
+- Se mantienen tres canales. El contacto con un humano, Flow, CRM, alertas y banco/fintech aparecen como ampliaciones futuras.

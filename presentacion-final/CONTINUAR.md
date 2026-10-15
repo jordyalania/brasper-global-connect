@@ -20,4 +20,4 @@ Puedes copiar este bloque al iniciar una sesión nueva:
 
 ## Pitch de siete minutos
 
-La versión para exposición cronometrada está en `7-minutos/`. Leer su README, `SPEECH_7_MIN.md` y `FUENTES_Y_ALCANCE.md`. Conserva 14 diapositivas principales, 4 anexos y video de 64,5 segundos dentro del total de 420 segundos. El índice superior sigue siendo la V1 extensa.
+La versión para exposición cronometrada está en `7-minutos/`. Leer su README, `SPEECH_7_MIN.md` y `FUENTES_Y_ALCANCE.md`. Conserva 16 diapositivas principales, 4 anexos y video de 64,5 segundos dentro del total de 420 segundos. El índice superior sigue siendo la V1 extensa.
