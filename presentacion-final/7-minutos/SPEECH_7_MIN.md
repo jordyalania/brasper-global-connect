@@ -16,7 +16,7 @@
 
 ## 04. 01 / PROBLEMÁTICA · oportunidad · 30 segundos
 
-30 s. Brasper informa 131 chats diarios. Sesenta y siete terminan en transferencia y sesenta y cuatro se quedan en cotización. La conversión es 51,1%. Esto no prueba que perdamos 64 ventas: hay consultas, comparaciones y personas que aún no deciden. Sí nos da una pregunta comercial concreta: qué paso les falta y qué fricción podemos quitar. Queremos que la información se registre, que cada operación tenga estado y que la siguiente decisión se tome con datos. Fuente: informe WhatsApp y Facebook aportado, sin cruce individual con la base SQL.
+30 s. Brasper recibe, en promedio, ciento treinta y un chats al día. Sesenta y siete terminan en transferencia y sesenta y cuatro se quedan en cotización. La conversión ronda el cincuenta y uno por ciento. Con datos disponibles y autorización, el equipo puede investigar qué los desmotivó, retomar el contacto y sugerir una alternativa. La oportunidad es aprender y acompañar, no dar por perdida cada consulta.
 
 ## 05. 02 / SOLUCIÓN PROPUESTA · omni · 25 segundos
 
@@ -40,15 +40,15 @@
 
 ## 10. 03 / IMPACTO · GANANCIA PROYECTADA · 24h · 25 segundos
 
-25 s. Abrir este canal todo el día permite captar intención cuando hoy el equipo no está disponible. Ejemplo conservado del modelo: diez consultas realmente nuevas por día fuera de horario, veinte por ciento que convierte y treinta días. Son sesenta operaciones. Con quince soles de contribución por operación, serían novecientos soles antes de costos adicionales. No es una venta observada ni promesa de pago instantáneo. La demanda nocturna y el margen deben medirse. Mejorar conversión con igual inversión puede mejorar adquisición, pero todavía no tenemos un CAC real calculado.
+25 s. El potencial de crecimiento viene de varias fuentes: recibir intención de compra a cualquier hora, abrir tres canales y dar una experiencia más clara. Además, el tiempo liberado permite al equipo seguir las cotizaciones pendientes. Queremos entender por qué alguien no compró y probar campañas o cupones que dejen margen. Ese crecimiento se medirá en el piloto.
 
 ## 11. 03 / IMPACTO · CAPACIDAD OPERATIVA · economia · 25 segundos
 
-25 s. El impacto tampoco termina en vender fuera de horario. La dotación de referencia confirmada es seis personas en ventas y tres en contabilidad. El escenario de trabajo pasa a tres y una. Tres puestos de ventas a mil setecientos, y dos contables a dos mil, suman nueve mil cien soles mensuales: ciento nueve mil doscientos al año. Es capacidad salarial bruta potencial, no ahorro ya conseguido. Los salarios son supuestos y faltan cargas y costos de tecnología. La decisión puede ser reasignar capacidad hacia ventas y marketing. Debemos medir productividad y servicio antes de decidir la plantilla.
+25 s. Bien implementada, la automatización puede liberar tiempo equivalente a ciento nueve mil doscientos soles al año, bajo el escenario salarial. El equipo puede capacitarse y dedicar esa capacidad a captar clientes, acompañar consultas y mejorar la conversión. El ahorro es de trabajo operativo y capacidad disponible; no estamos planteando despidos ni afirmando que ese importe ya quedó libre en caja.
 
 ## 12. 03 / IMPACTO · COSTO-BENEFICIO · costobeneficio · 35 segundos
 
-35 s. Separamos inversión, operación y retorno. El costo de implementación todavía necesita una cotización, así que no lo presentamos como cero. El material del equipo propone unos trescientos soles al mes de operación: es un presupuesto preliminar, no una tarifa validada. Frente al escenario de novecientos soles de contribución por nueva demanda nocturna, quedarían seiscientos para cubrir inversión y costos no incluidos. No es ganancia neta ni ROI probado. Tampoco sumamos ahorro salarial y recuperación como si fueran caja asegurada.
+35 s. La puesta en marcha está incluida como aporte del equipo al concurso. Presupuestamos solo trescientos soles mensuales de tecnología para operar el piloto. Para ilustrar el crecimiento, recuperar el diez por ciento de las cotizaciones supondría ciento noventa y dos operaciones mensuales. Sumadas a sesenta nocturnas distintas, serían tres mil setecientos ochenta soles de contribución, antes de tecnología, campañas y otros costos. Es un escenario, no el techo ni un resultado probado. Con margen de quince soles, veinte operaciones adicionales cubren la tecnología.
 
 ## 13. 04 / DEMO · video · 65 segundos
 
@@ -56,7 +56,7 @@
 
 ## 14. PRÓXIMOS PASOS · siguiente · 30 segundos
 
-30 s. Después de la demostración, proponemos tres ampliaciones. La siguiente iteración del bot puede transferir el caso a un asesor con el historial y los datos ya recogidos. Luego, un CRM con IA puede registrar intención y motivos de no avance para probar seguimiento comercial y alertas autorizadas. Finalmente, evaluar un banco o fintech para conciliación y pago automático. La prioridad es validar el piloto, la identidad y los módulos antes de ampliar. Flow sigue sujeto a Meta. Son próximos pasos, no capacidades entregadas.
+30 s. La próxima fase combina personas e inteligencia artificial. Primero, pasar del bot a un asesor con contexto. Después, usar información centralizada para registrar motivos, priorizar consultas y hacer seguimiento. El equipo puede probar campañas y cupones, comparando ventas y margen. Un CRM con IA ayudará a escalar ese trabajo. Más adelante, evaluar un banco o fintech para ampliar la automatización con controles. Cada paso se valida antes de expandirse.
 
 ## 15. CIERRE · cierre · 10 segundos
 

@@ -15,3 +15,7 @@ Anexo fuera de tiempo. Fuentes en ../fuentes/. El PDF de referencia contiene otr
 ## anexo-futuro
 
 Anexo fuera del tiempo de exposición. Los próximos pasos se priorizan con el negocio y no equivalen a funcionalidades implementadas. La atención híbrida mantiene los mismos tres canales: el humano es una modalidad de atención, no un cuarto canal.
+
+## anexo-costos
+
+Desglose del presupuesto tecnológico. Fuentes y límites en COSTOS_TECNOLOGICOS.md. No duplicar el primer mes como costo de instalación.

@@ -1,0 +1,12 @@
+Concepto,USD_mes,PEN_mes,Naturaleza,Fuente
+Lovable Pro,25,95,Tarifa pública mensual; capacidad y créditos limitados,https://lovable.dev/pricing
+VPS 2 GiB,12,45.6,Tarifa de referencia; proveedor y capacidad por confirmar,https://www.digitalocean.com/pricing/droplets
+Backup VPS semanal,2.4,9.12,20% del VPS,https://www.digitalocean.com/pricing/droplets
+Firebase,15,57,Provisión de consumo; no tarifa plana,https://firebase.google.com/pricing
+IA Haiku 5.5,9.68,36.784,4000 chats;12k entrada y2k salida acumulados/chat;+10% reintentos,https://platform.claude.com/docs/en/about-claude/pricing
+WAHA,0,0,Software Community; servidor aparte,https://waha.devlike.pro/
+Expo Free,0,0,Dentro de cuotas; tiendas aparte,https://expo.dev/pricing
+Subtotal,64.08,243.504,Calculado,costos-modelo.json
+Reserva general 20%,12.816,48.7008,Supuesto de presupuesto,costos-modelo.json
+Total estimado,76.896,292.2048,Antes de impuestos y cargos de terceros,costos-modelo.json
+Presupuesto redondeado,,300,Propuesto para el piloto,costos-modelo.json

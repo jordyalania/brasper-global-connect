@@ -1,7 +1,7 @@
 {
   "durationSeconds": 420,
   "mainSlides": 16,
-  "appendixSlides": 4,
+  "appendixSlides": 5,
   "videoSeconds": 64.5,
   "channels": [
     "WhatsApp",
@@ -125,6 +125,12 @@
     },
     {
       "id": "anexo-futuro",
+      "seconds": 0,
+      "block": "ANEXOS",
+      "appendix": true
+    },
+    {
+      "id": "anexo-costos",
       "seconds": 0,
       "block": "ANEXOS",
       "appendix": true
