@@ -53,3 +53,7 @@ La lámina de solución distingue WhatsApp, web, app iOS y app Android como cuat
 Fuente oficial: [D.S. 115-2025-PCM, Reglamento de la Ley 31814](https://busquedas.elperuano.pe/dispositivo/NL/2436426-1), consultado el 15/10/2026. Los arts. 25.1 y 25.2 regulan transparencia en sistemas de riesgo alto y contemplan identificación visible cuando corresponda. El art. 26 remite a protección de datos; el 31.2 a políticas y protocolos del sector privado. La primera disposición final establece plazos por sector y MYPE. No se presume clasificación de riesgo ni vencimiento aplicable a Brasper.
 
 La lámina distingue conversación con IA, reglas deterministas y validación humana. En el código revisado (`supabase/functions/whatsapp-webhook/index.ts` y `src/lib/whatsapp/bridge.server.ts`) el saludo dice «asistente virtual», sin identificación explícita de IA. La frase de la lámina es un aviso propuesto por incorporar y validar en cada canal, no una funcionalidad desplegada ni una certificación de cumplimiento integral.
+
+## Retratos del equipo
+
+Fotografías aportadas por el usuario el 15/10/2026, en el orden indicado: David, Binni, Jordy y Melani. Originales en `assets/equipo/`; la escala de grises y el encuadre se aplican únicamente en la presentación con CSS.
