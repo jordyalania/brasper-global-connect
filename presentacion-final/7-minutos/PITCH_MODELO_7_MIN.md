@@ -46,10 +46,10 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 
 ## 05. 02 / SOLUCIÓN PROPUESTA · 01:25–01:50
 
-**En pantalla:** WHATSAPP, WEB Y APP UN REGISTRO OPERATIVO
+**En pantalla:** CUATRO FORMAS DE LLEGAR UN REGISTRO OPERATIVO
 
 
-> OMNI by 5.5 reúne tres entradas: WhatsApp, web y app para iOS y Android. La propuesta es que la operación tenga un registro operativo sobre Firebase y una revisión interna por estados. Así, los módulos comparten un proceso comprensible. La continuidad de identidad entre canales es parte de la integración que tenemos que validar.
+> OMNI by 5.5 propone cuatro puntos de acceso: WhatsApp, web, app para iOS y app para Android. Ambas apps comparten el módulo móvil y el backend. La propuesta es que la operación tenga un registro operativo sobre Firebase y una revisión interna por estados. Así, los módulos comparten un proceso comprensible. La continuidad de identidad entre canales es parte de la integración que tenemos que validar.
 
 
 *Transición: hacer una pausa breve y avanzar.*
@@ -99,7 +99,7 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 **En pantalla:** TU PRÓXIMO CLIENTE NO ESPERA A MAÑANA
 
 
-> El potencial de crecimiento viene de varias fuentes: recibir intención de compra a cualquier hora, abrir tres canales y dar una experiencia más clara. Además, el tiempo liberado permite al equipo seguir las cotizaciones pendientes. Queremos entender por qué alguien no compró y probar campañas o cupones que dejen margen. Ese crecimiento se medirá en el piloto.
+> El potencial de crecimiento viene de varias fuentes: recibir intención de compra a cualquier hora, abrir cuatro puntos de acceso y dar una experiencia más clara. Además, el tiempo liberado permite al equipo seguir las cotizaciones pendientes. Queremos entender por qué alguien no compró y probar campañas o cupones que dejen margen. Ese crecimiento se medirá en el piloto.
 
 
 *Transición: hacer una pausa breve y avanzar.*
@@ -165,7 +165,7 @@ Ritmo orientativo: 135–145 palabras por minuto, con pausas y transiciones. Las
 
 ## Respuestas breves para preguntas
 
-**¿Son tres o cuatro canales?** Tres: WhatsApp, web y app. El backoffice es una herramienta interna. Hablar con un humano es una modalidad de atención.
+**¿Cómo contamos los cuatro canales?** Como puntos de acceso: WhatsApp, web, app iOS y app Android. Las dos apps comparten el módulo móvil y backend. El backoffice es interno y el humano es una modalidad de atención. No son cuatro sistemas independientes.
 
 **¿Ya recuperan las 64 cotizaciones?** No. El dato identifica una oportunidad. Se propone registrar motivos y probar seguimiento autorizado con medición.
 

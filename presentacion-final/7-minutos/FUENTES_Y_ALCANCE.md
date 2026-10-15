@@ -30,7 +30,7 @@ Equipo: David, Binni, Jordy y Melani, según el material aportado. Los logos se 
 - El arranque tecnológico presupone el primer mes de servicios Cloud API (S/3.500), contado una sola vez. Desarrollo e integración incluidos como aporte del equipo en el concurso, sin cobro en la ecuación. Publicación en ambas tiendas con cuentas nuevas: +S/471,20 el primer año.
 - S/3.780 de contribución hipotética menos S/3.500 de presupuesto oficial conservador deja S/280 antes de otros costos. El esquema WAHA de S/300 es una alternativa. No es beneficio neto ni ROI observado.
 - Los indicadores de tiempo, errores y productividad necesitan una línea base del piloto. No se ofrece un porcentaje de reducción ya logrado.
-- Se mantienen tres canales. El contacto con un humano, Flow, CRM, alertas y banco/fintech aparecen como ampliaciones futuras.
+- Se presentan cuatro puntos de acceso: WhatsApp, web, iOS y Android. El contacto con un humano, Flow, CRM, alertas y banco/fintech aparecen como ampliaciones futuras.
 
 ## Interpretación del ahorro y del crecimiento
 
@@ -43,3 +43,7 @@ Supuesto vigente: el usuario inicia todas las conversaciones. Seis respuestas de
 ## Presupuesto optimizado de próxima iteración
 
 El objetivo vigente del pitch es S/1.400/mes con Meta, bajo la propuesta documentada en OPTIMIZACION_WHATSAPP.md. Dos envíos por chat más apoyo en 10% de casos: 2,2 de media. No está implementado; S/3.500 sigue como referencia anterior. No alterar tarifas ni asumir gratuidad de plantillas. Las seis respuestas por chat descritas antes corresponden a la referencia, no al diseño propuesto.
+
+## Conteo comercial de acceso
+
+La lámina de solución distingue WhatsApp, web, app iOS y app Android como cuatro puntos de acceso propuestos. iOS y Android comparten módulo móvil y backend. La separación es de presentación y distribución; no acredita publicación ni duplica costos, usuarios o contribución.

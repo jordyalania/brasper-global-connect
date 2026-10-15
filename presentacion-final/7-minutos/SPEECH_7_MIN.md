@@ -20,7 +20,7 @@
 
 ## 05. 02 / SOLUCIÓN PROPUESTA · omni · 25 segundos
 
-25 s. El diseño de OMNI tiene tres entradas: conversación en WhatsApp, formulario web y aplicación para iOS y Android. El punto de encuentro es el registro operativo sobre Firebase y su revisión interna. Esto permite ordenar el recorrido por estados. Los módulos se desarrollan por separado. No prometemos recuperación automática al cambiar de dispositivo: esa unión de identidad todavía necesita validación.
+25 s. El diseño de OMNI tiene cuatro puntos de acceso: WhatsApp, web, app iOS y app Android. Ambas apps comparten módulo y backend. El punto de encuentro es el registro operativo sobre Firebase y su revisión interna. Esto permite ordenar el recorrido por estados. Los módulos se desarrollan por separado. No prometemos recuperación automática al cambiar de dispositivo: esa unión de identidad todavía necesita validación.
 
 ## 06. 02 / SOLUCIÓN PROPUESTA · whatsapp · 30 segundos
 
@@ -40,7 +40,7 @@
 
 ## 10. 03 / IMPACTO · GANANCIA PROYECTADA · 24h · 25 segundos
 
-25 s. El potencial de crecimiento viene de varias fuentes: recibir intención de compra a cualquier hora, abrir tres canales y dar una experiencia más clara. Además, el tiempo liberado permite al equipo seguir las cotizaciones pendientes. Queremos entender por qué alguien no compró y probar campañas o cupones que dejen margen. Ese crecimiento se medirá en el piloto.
+25 s. El potencial de crecimiento viene de varias fuentes: recibir intención de compra a cualquier hora, abrir cuatro puntos de acceso y dar una experiencia más clara. Además, el tiempo liberado permite al equipo seguir las cotizaciones pendientes. Queremos entender por qué alguien no compró y probar campañas o cupones que dejen margen. Ese crecimiento se medirá en el piloto.
 
 ## 11. 03 / IMPACTO · CAPACIDAD OPERATIVA · economia · 25 segundos
 

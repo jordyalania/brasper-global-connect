@@ -19,12 +19,12 @@ Para continuar: editar `index.html` y `seven.css`; mantener `estructura.json`, g
 ## Bloques de exposición
 
 1. Problemática: diagnóstico y 64 cotizaciones sin transferencia.
-2. Solución propuesta: tres canales (WhatsApp, web y app) y revisión interna.
+2. Solución propuesta: cuatro puntos de acceso (WhatsApp, web, app iOS y app Android) y revisión interna.
 3. Impacto: KPIs, demanda 24/7, capacidad salarial y costo-beneficio.
 4. Demo: video de 64,5 segundos.
 5. Próximos pasos y cierre con logos.
 
-La atención humana es una futura modalidad del bot, no un cuarto canal. El presupuesto tecnológico recalculado es S/1.359,24/mes, redondeado a S/1.400 con Cloud API optimizado como propuesta aún no implementada; WAHA S/300 como alternativa. El primer mes se cuenta una sola vez. Cuentas de tiendas opcionales aparte. No incluye honorarios.
+La atención humana es una futura modalidad del bot, no un punto de acceso adicional. El presupuesto tecnológico recalculado es S/1.359,24/mes, redondeado a S/1.400 con Cloud API optimizado como propuesta aún no implementada; WAHA S/300 como alternativa. El primer mes se cuenta una sola vez. Cuentas de tiendas opcionales aparte. No incluye honorarios.
 
 El ahorro anual se explica como capacidad operativa para capacitación, captación y seguimiento. La contribución comercial del escenario ampliado no se presenta como un resultado ya obtenido.
 
@@ -33,3 +33,5 @@ Para el concurso, la puesta en marcha se presenta incluida como aporte del equip
 Anexo A: cálculo de S/3.780. Anexo A.2: recuperaciones del 5%, 10% y 20%, con saldos para ambas alternativas. El importe del impacto enlaza al cálculo. La app se propone para iOS y Android.
 
 [Optimización propuesta de WhatsApp](OPTIMIZACION_WHATSAPP.md): el anexo F explica cómo agrupar datos y mensajes. Mantener separado del estado actual.
+
+En la solución se cuentan iOS y Android por separado: cuatro puntos de acceso. Comparten implementación móvil y backend. No duplicar presupuesto ni ventas por esta distinción.

@@ -6,7 +6,8 @@
   "channels": [
     "WhatsApp",
     "Web",
-    "App"
+    "App iOS",
+    "App Android"
   ],
   "slides": [
     {
@@ -147,5 +148,6 @@
       "block": "ANEXOS",
       "appendix": true
     }
-  ]
+  ],
+  "channelCounting": "Cuatro puntos de acceso de presentación; iOS y Android comparten módulo móvil y backend."
 }
