@@ -43,3 +43,7 @@ En la solución se cuentan iOS y Android por separado: cuatro puntos de acceso. 
 ## Transparencia de IA
 
 El anexo G distingue conversación con IA, reglas deterministas y validación humana. Incluye un aviso explícito propuesto y fuente normativa peruana; su despliegue y el cumplimiento integral requieren verificación. No cambia el recorrido principal de las láminas 3 a 15.
+
+## Video en PowerPoint
+
+`OMNI-5.5-7-minutos-video-final.pptx` y el PPTX principal contienen la demo incrustada como video nativo. Se reproduce automáticamente al entrar en la diapositiva 13, dentro del recuadro y con el texto inferior visible. El PDF conserva una imagen estática.
