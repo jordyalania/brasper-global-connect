@@ -1,70 +1,99 @@
-# Brasper Global Connect
+# Brasper · Cambio de moneda desde la web
 
-Crea una landing page moderna, minimalista y responsiva para Brasper (transferencias internacionales entre Perú, Brasil y EE. UU.). Debe incluir:
+Brasper permite al usuario cotizar un cambio entre soles peruanos (PEN) y reales brasileños (BRL), registrar sus datos y la cuenta de destino, adjuntar el comprobante de pago y seguir su operación desde el navegador, tanto en computadora como en móvil.
 
-1. Una sección principal (Hero) con un título llamativo enfocado en envíos seguros en minutos, un calculador rápido de divisas y un botón de llamada a la acción (CTA) para WhatsApp.
+El portal web **ahora se conecta al backend de Firebase de BRASPER** para obtener cotizaciones, guardar operaciones, recibir archivos y consultar sus estados. El cliente puede comenzar sin crear una cuenta ni elegir una contraseña.
 
-2. Una sección de características clave con iconos (más de 50 mil envíos, transacciones seguras, atención bilingüe, mejor tasa del mercado).
+[Abrir Brasper](https://brasper.jordybryan.com/) · [Probar el recorrido PEN → BRL con S/ 1.000](https://brasper.jordybryan.com/transferencias?from=PEN&to=BRL&amount=1000)
 
-3. Una sección de bancos asociados (BCP, Banco do Brasil, NuBank, C6 Bank) y pruebas de confianza de su trayectoria.
+## Experiencia del usuario
 
-4. Un formulario de contacto e información en el pie de página.
+### 1. Calcular el cambio
 
-Usa una paleta de colores moderna con tonos corporativos (azules profundos) y acentos vibrantes.
+En la página principal, el usuario elige cuánto quiere enviar y las monedas de origen y destino. La calculadora muestra un estimado; la cotización definitiva se obtiene al continuar en el portal.
 
-This project was built with [Lovable](https://lovable.dev).
+![Calculadora de cambio en la página principal](docs/screenshots/01-landing.jpg)
 
-## Build with Lovable
+### 2. Obtener una cotización
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3238d75c-acc7-415b-889e-3acc9f1100b6).
+**Hacer mi cambio desde la web** lleva el monto y las monedas a `/transferencias`. Al pulsar **Continuar**, el servidor calcula la tasa, la comisión, el impuesto sobre la comisión, el total a transferir y el importe que recibirá el destinatario.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+![Monto y monedas para cotizar](docs/screenshots/02-cotizar.jpg)
 
-## Development
+La cotización muestra un contador de vigencia. El usuario puede revisar sus importes antes de registrar la operación. Si vence, debe generar una nueva para consultar la tasa vigente.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### 3. Completar los datos y el destino
+
+El formulario solicita nombre, documento, correo y origen de los fondos, además del banco y la cuenta de origen, y del banco y la cuenta o clave PIX de destino. El usuario puede corregir el monto o completar los datos y pulsar **Crear mi operación**.
+
+La opción **Recordar mis datos en este dispositivo para la próxima vez** es voluntaria.
+
+![Cotización y formulario de datos](docs/screenshots/03-cotizacion-y-datos.jpg)
+
+### 4. Consultar la cuenta de pago y adjuntar el comprobante
+
+La web genera una referencia como `BR-0001` y muestra la cuenta receptora de Brasper, el importe exacto y la vigencia de la tasa. El cliente completa el número de operación bancaria y adjunta una imagen o PDF de hasta 8 MB. Después pulsa **Ya pagué, enviar comprobante**.
+
+En el entorno de demostración, la cuenta aparece identificada como **DEMO**. Las pruebas utilizan datos y archivos de demostración, sin una transferencia bancaria real.
+
+### 5. Seguir el avance
+
+El usuario consulta la operación y su línea de tiempo desde la misma web. Mientras la pantalla está activa, el portal consulta los cambios periódicamente; también ofrece el botón **Actualizar**.
+
+| Estado | Qué ve el usuario |
+| --- | --- |
+| Esperando tu pago | Operación creada, con las instrucciones para pagar y enviar el archivo. |
+| Pago en revisión | El comprobante fue enviado y el ingreso está pendiente de validación. |
+| Pago confirmado | La validación terminó y el envío está en preparación. |
+| Dinero enviado | La operación figura como enviada. |
+| Comprobante disponible | El documento está listo para descargar. |
+
+Si la operación es rechazada, la web muestra el motivo cuando está disponible. Antes de pagar, el usuario puede solicitar la cancelación desde su operación.
+
+![Seguimiento de una operación en revisión](docs/screenshots/04-operacion-en-revision.jpg)
+
+### 6. Volver y descargar el comprobante
+
+**Mis transferencias** reúne las operaciones del usuario en ese navegador. Puede abrir una referencia, consultar su avance y descargar el comprobante cuando esté disponible. Los documentos del entorno de prueba se identifican como tales y aún no tienen validez tributaria.
+
+![Listado de transferencias del usuario](docs/screenshots/05-mis-transferencias.jpg)
+
+El acceso está vinculado a la sesión de este navegador. Borrar los datos del sitio o cambiar de dispositivo puede hacer que las operaciones dejen de estar accesibles desde esa sesión. El navegador conserva resúmenes de las operaciones; el perfil se recuerda solo si el usuario activa esa opción.
+
+### Uso desde el móvil
+
+El mismo recorrido se adapta a pantallas pequeñas: cotización, formulario, carga del comprobante y seguimiento.
+
+<img src="docs/screenshots/06-movil.jpg" alt="Seguimiento de la operación desde el móvil" width="280" />
+
+## Conexión con Firebase
+
+El portal se comunica mediante REST con Firebase y las Cloud Functions del proyecto `aibrasper`:
+
+| Servicio | Función en la experiencia web |
+| --- | --- |
+| Firebase Authentication | Crea una sesión anónima para asociar las operaciones al usuario del navegador. |
+| Cloud Functions | Obtiene tasas, genera cotizaciones, registra operaciones, recibe la referencia del comprobante y permite recuperar el documento final. |
+| Cloud Firestore | Permite consultar las operaciones del usuario y sus estados para actualizar el seguimiento. |
+| Cloud Storage | Recibe las imágenes y PDF adjuntos al registrar el comprobante de pago. |
+
+El servidor define los importes de la cotización. Adjuntar un archivo inicia la revisión del pago; la confirmación aparece como un estado posterior. En las demostraciones, la aprobación y el envío pueden simularse sin mover dinero real.
+
+El detalle técnico de endpoints, sesión, almacenamiento local y emuladores está en [Integración del portal con el backend](docs/BACKEND_INTEGRATION.md).
+
+## Desarrollo local
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
 
-## Transferencias
+Para comprobar el proyecto:
 
-El portal `/transferencias` funciona sobre las Cloud Functions de BRASPER (Firebase, proyecto `aibrasper`): cotiza con tasa fijada 15 minutos, registra la operación, muestra la cuenta de pago, recibe el comprobante y sigue el estado hasta el comprobante PDF. No requiere registro: el cliente entra como usuario anónimo silencioso y su acceso queda en este navegador. Consulta [la integración con el backend](docs/BACKEND_INTEGRATION.md) para el mapa del código, qué se guarda localmente y cómo apuntar a los emuladores.
+```sh
+npm run build
+npm run test
+npm run lint
+```
 
-Los flujos anteriores sobre Supabase (`docs/TRANSFER_WORKFLOW.md`, `/dashboard`, `/login`) ya no forman parte del recorrido del cliente. La revisión interna (aprobar, exportar, facturar) se hace con las funciones de staff del backend.
-
-### Flujo del usuario
-
-Capturas tomadas contra el backend real con datos de prueba.
-
-**1. Calculadora en la página principal.** Muestra un estimado con la tasa de mercado (`getRates`); nunca es una cotización vinculante.
-
-![Calculadora con tasa en vivo](docs/screenshots/01-landing.jpg)
-
-**2. Cotizar.** "Hacer mi cambio desde la web" lleva el monto y las monedas al portal. Al continuar, `createQuote` calcula las cifras definitivas.
-
-![Paso 1: cuánto quieres enviar](docs/screenshots/02-cotizar.jpg)
-
-**3. Cotización y datos.** La cotización del servidor fija la tasa por 15 minutos (con cuenta regresiva). El formulario valida documento, correo y cuentas antes de llamar a `createOrder`.
-
-![Paso 2: cotización y datos del destinatario](docs/screenshots/03-cotizacion-y-datos.jpg)
-
-**4. Pagar y subir el comprobante.** Se crea la operación (`BR-xxxx`) y se muestra la cuenta de pago de Brasper, hoy marcada como **DEMO**. El cliente transfiere, escribe el número de operación del banco y adjunta una imagen o PDF de hasta 8 MB (Firebase Storage + `submitProof`).
-
-**5. Seguimiento.** La operación pasa a "Pago en revisión" y la línea de tiempo se actualiza sola mientras el equipo valida el ingreso. Cuando la factura de prueba esté aceptada aparece "Descargar comprobante" (`getReceipt`).
-
-![Operación en revisión](docs/screenshots/04-operacion-en-revision.jpg)
-
-**6. Volver más tarde.** El navegador recuerda un resumen de cada operación (sin documento, correo ni cuentas), así que la lista aparece de inmediato al regresar.
-
-![Mis transferencias](docs/screenshots/05-mis-transferencias.jpg)
-
-**Móvil.** Todo el flujo funciona en pantallas pequeñas.
-
-<img src="docs/screenshots/06-movil.jpg" alt="Seguimiento en móvil" width="280" />
+Desarrollado con React, TypeScript, TanStack y Vite. El repositorio está conectado al [editor de Lovable](https://lovable.dev/projects/3238d75c-acc7-415b-889e-3acc9f1100b6).
